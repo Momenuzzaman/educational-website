@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import logo from '../../../image/nav.png';
 
 
 const Header = () => {
@@ -9,9 +10,11 @@ const Header = () => {
     return (
         <div>
             <>
-                <Navbar bg="dark" variant="dark" sticky="top" collapseOnSelect expand="lg">
+                <Navbar bg="light" variant="dark" sticky="top" collapseOnSelect expand="lg">
                     <Container>
-                        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                        <Navbar.Brand href="#home">
+                            <img src={logo} alt="" />
+                        </Navbar.Brand>
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-end">
                             <Nav.Link href="#home">Home</Nav.Link>
