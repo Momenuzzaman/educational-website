@@ -4,13 +4,13 @@ import './Topic.css';
 const Topic = ({ topic }) => {
     const { img, name } = topic;
     return (
-        <div >
-            <div>
-                <img src={img} alt={img} />
+        <div className="box d-flex">
+            <div >
+                <img src={img} height="40px" alt={img} />
+                <span>{name}</span>
             </div>
-            <div>
-                <h3>{name}</h3>
-            </div>
+
+
         </div>
     );
 };

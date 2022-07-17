@@ -12,7 +12,9 @@ const Tutorials = () => {
     }, []);
     return (
         <div className=" container tutorials" >
-            <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
+            <div className="rated">
+                <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
+            </div>
             <div className="row">
                 {
                     tutorials.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial}></Tutorial>)
