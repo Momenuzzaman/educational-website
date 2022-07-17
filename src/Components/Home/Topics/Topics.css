@@ -5,11 +5,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 20px;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 768px) {
   .topic {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
