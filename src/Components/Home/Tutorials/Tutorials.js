@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Tutorial from '../Tutorial/Tutorial';
+import './Tutorials.css';
 
 const Tutorials = () => {
     const [tutorials, setTutorial] = useState([]);
@@ -10,7 +11,7 @@ const Tutorials = () => {
             .then(data => setTutorial(data));
     }, []);
     return (
-        <div className="mt-5 container" >
+        <div className=" container tutorials" >
             <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
             <div className="row">
                 {
