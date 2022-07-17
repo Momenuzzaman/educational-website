@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Topic from '../Topic/Topic';
+import './Topics.css';
 
 const Topics = () => {
     const [topics, setTopic] = useState([]);
@@ -10,8 +11,8 @@ const Topics = () => {
             .then(data => setTopic(data));
     }, []);
     return (
-        <div>
-            <h1>{topics.length}</h1>
+        <div className="topic">
+            <h1>Top Rated Learning Tutorials</h1>
             <div>
                 {
                     topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)

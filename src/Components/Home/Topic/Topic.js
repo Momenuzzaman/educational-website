@@ -1,9 +1,10 @@
 import React from 'react';
+import './Topic.css';
 
 const Topic = ({ topic }) => {
     const { img, name } = topic;
     return (
-        <div className="container topic">
+        <div >
             <div>
                 <img src={img} alt={img} />
             </div>
