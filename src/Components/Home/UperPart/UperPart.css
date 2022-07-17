@@ -6,6 +6,9 @@
   border: none;
   border-radius: 5px;
 }
+.btn-top:hover {
+  background-color: rgb(17, 17, 26);
+}
 .body {
   background-color: rgb(190, 223, 233);
 }

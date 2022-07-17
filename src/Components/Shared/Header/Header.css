@@ -2,8 +2,8 @@
   color: black;
   font-weight: bold;
 }
-.nav-font :hover {
-  color: white;
+.nav-font:hover {
+  color: lightseagreen;
 }
 .nav-toggle {
   background-color: lightseagreen;

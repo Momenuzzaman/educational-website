@@ -30,7 +30,7 @@
     "start": "July 26, 2022",
     "end": "July 26, 2022",
     "duration": "25 hour",
-    "price": "39"
+    "price": 39
   },
   {
     "id": "4",
@@ -41,7 +41,7 @@
     "start": "July 16, 2022",
     "end": "July 18, 2022",
     "duration": "35 hours",
-    "price": "free"
+    "price": 15
   },
   {
     "id": "5",
@@ -52,7 +52,7 @@
     "start": "July 16, 2022",
     "end": "December 24, 2022",
     "duration": "25 weeks",
-    "price": "30"
+    "price": 30
   },
   {
     "id": "6",
@@ -63,6 +63,6 @@
     "start": "July 16, 2022",
     "end": "September 10, 2022",
     "duration": "8 weeks",
-    "price": "Free"
+    "price": 10
   }
 ]

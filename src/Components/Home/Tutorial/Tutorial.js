@@ -13,7 +13,7 @@ const Tutorial = ({ tutorial }) => {
                     <Card.Text>
                         Price : ${price}
                     </Card.Text>
-                    <button className="btn-top cart-button" >Course Details</button>
+                    <button className="cart-button" >Course Details</button>
                 </Card.Body>
             </Card>
         </div>
