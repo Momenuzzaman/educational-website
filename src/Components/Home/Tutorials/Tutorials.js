@@ -10,7 +10,7 @@ const Tutorials = () => {
             .then(data => setTutorial(data));
     }, []);
     return (
-        <div className="mt-5" >
+        <div className="mt-5 container" >
             <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
             <div className="row">
                 {
