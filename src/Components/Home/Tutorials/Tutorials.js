@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Tutorial from '../Tutorial/Tutorial';
 
 const Tutorials = () => {
     const [tutorials, setTutorial] = useState([]);
@@ -9,8 +10,14 @@ const Tutorials = () => {
             .then(data => setTutorial(data));
     }, []);
     return (
-        <div>
-            <h1>This is a tutorials {tutorials.length}</h1>
+        <div className="mt-5" >
+            <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
+            <div className="row">
+                {
+                    tutorials.map(tutorial => <Tutorial tutorial={tutorial}></Tutorial>)
+                }
+            </div>
+
         </div>
     );
 };
