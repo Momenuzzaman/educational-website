@@ -54,15 +54,15 @@ const education = [
         duration: "25 weeks",
         price: "30"
     },
-    {
-        id: "6",
-        name: "Complete Digital Marketing Course",
-        img: "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2020/09/BLP08-740x540.jpeg",
-        title: "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",
-        description: "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
-        start: "July 16, 2022",
-        end: "September 10, 2022",
-        duration: "8 weeks",
-        price: "Free"
-    },
+    // {
+    //     id: "6",
+    //     name: "Complete Digital Marketing Course",
+    //     img: "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2020/09/BLP08-740x540.jpeg",
+    //     title: "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",
+    //     description: "This tutorial will help you learn quickly and thoroughly. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.",
+    //     start: "July 16, 2022",
+    //     end: "September 10, 2022",
+    //     duration: "8 weeks",
+    //     price: "Free"
+    // },
 ];
