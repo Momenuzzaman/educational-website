@@ -1,11 +1,14 @@
 import React from 'react';
 
 const Topic = ({ topic }) => {
-    const { img, nmae } = topic;
+    const { img, name } = topic;
     return (
-        <div>
+        <div className="container topic">
             <div>
                 <img src={img} alt={img} />
+            </div>
+            <div>
+                <h3>{name}</h3>
             </div>
         </div>
     );
