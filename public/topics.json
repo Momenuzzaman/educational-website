@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Design",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/pencil.png"
+  },
+  {
+    "id": 2,
+    "name": "Chemistry",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/science.png"
+  },
+  {
+    "id": 3,
+    "name": "Technology",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/tech.png"
+  },
+  {
+    "id": 4,
+    "name": "Medical",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/med.png"
+  },
+  {
+    "id": 5,
+    "name": "Mathematics",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/math.png"
+  },
+  {
+    "id": 6,
+    "name": "Food",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/food-delivery.png"
+  },
+  {
+    "id": 7,
+    "name": "Language",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/graduating-student.png"
+  },
+  {
+    "id": 8,
+    "name": "Art & Block",
+    "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/01/art-book.png"
+  }
+]
