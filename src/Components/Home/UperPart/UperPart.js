@@ -1,20 +1,23 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import img from '../../../image/main.png';
+import './UperPart.css';
 
 
 const UperPart = () => {
     return (
-        <div>
-            <div>
-                <h2>A learning platform that helps you to learning faster</h2>
-                <p>World-class training and development programs developed by top teachers</p>
-                <Button variant="primary">Explore All Courses</Button>
-            </div>
-            <div>
-                <img src={img} alt="" />
-            </div>
-        </div>
+        <Container className="container">
+            <Row className="d-flex align-items-center">
+                <Col>
+                    <h1>A learning platform that helps you to learning faster</h1>
+                    <p>World-class training and development programs developed by top teachers</p>
+                    <button className="btn-top">Expore All Course</button>
+                </Col>
+                <Col>
+                    <img src={img} alt="" />
+                </Col>
+            </Row>
+        </Container>
     );
 };
 
