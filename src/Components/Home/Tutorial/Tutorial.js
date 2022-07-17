@@ -9,11 +9,14 @@ const Tutorial = ({ tutorial }) => {
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
+                    <div className="d-flex justify-content-around py-4 ">
+                        <button className="cart-button" >Course Details</button>
+                        <Card.Text className="price">
+                            Price : ${price}
+                        </Card.Text>
+                    </div>
                     <Card.Title>{name}</Card.Title>
-                    <Card.Text>
-                        Price : ${price}
-                    </Card.Text>
-                    <button className="cart-button" >Course Details</button>
+
                 </Card.Body>
             </Card>
         </div>
