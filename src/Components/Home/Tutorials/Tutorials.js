@@ -14,7 +14,7 @@ const Tutorials = () => {
             <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
             <div className="row">
                 {
-                    tutorials.map(tutorial => <Tutorial tutorial={tutorial}></Tutorial>)
+                    tutorials.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial}></Tutorial>)
                 }
             </div>
 
