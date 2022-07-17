@@ -11,14 +11,14 @@ const Topics = () => {
             .then(data => setTopic(data));
     }, []);
     return (
-        <div className="topic">
+        <div className="color" >
             <h1>Top Rated Learning Tutorials</h1>
-            <div>
+            <div className="topic">
                 {
                     topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
                 }
             </div>
-        </div>
+        </div >
     );
 };
 

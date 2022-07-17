@@ -1,3 +1,19 @@
-.topic {
+.color {
   background-color: #f6f7f9;
+}
+.topic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .topic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .topic {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
