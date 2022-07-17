@@ -17,7 +17,7 @@ const Header = () => {
                         <Navbar.Brand href="#home">
                             <img src={logo} height="34" alt="" />
                         </Navbar.Brand>
-                        <Navbar.Toggle />
+                        <Navbar.Toggle className="nav-toggle" />
                         <Navbar.Collapse className="justify-content-end">
                             <Nav.Link className="nav-font" href="#home">Home</Nav.Link>
                             <Nav.Link className="nav-font" href="#courses">Courses</Nav.Link>

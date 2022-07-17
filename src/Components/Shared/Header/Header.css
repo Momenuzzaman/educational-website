@@ -1,6 +1,10 @@
 .nav-font {
   color: black;
+  font-weight: bold;
 }
-.nav-font a {
-  color: black;
+.nav-font :hover {
+  color: white;
+}
+.nav-toggle {
+  background-color: lightseagreen;
 }
