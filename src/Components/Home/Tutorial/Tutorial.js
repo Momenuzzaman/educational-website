@@ -1,19 +1,19 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import './Tutorial.css';
 
 const Tutorial = ({ tutorial }) => {
-    const { title, name } = tutorial;
+    const { title, name, img, price } = tutorial;
     return (
         <div className=" g-5 col-sm-12 col-md-6 col-lg-4">
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
+                        Price : ${price}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <button className="btn-top cart-button" >Course Details</button>
                 </Card.Body>
             </Card>
         </div>
