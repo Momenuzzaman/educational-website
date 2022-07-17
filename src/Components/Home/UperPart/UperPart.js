@@ -7,7 +7,7 @@ import './UperPart.css';
 const UperPart = () => {
     return (
         <div className="body">
-            <Container className="p-2">
+            <Container >
                 <Row className="d-flex align-items-center">
                     <Col>
                         <h1>A learning platform that helps you to learning faster</h1>
@@ -15,7 +15,7 @@ const UperPart = () => {
                         <button className="btn-top">Expore All Course</button>
                     </Col>
                     <Col>
-                        <img src={img} alt="" />
+                        <img src={img} height="80%" alt="" />
                     </Col>
                 </Row>
             </Container>
