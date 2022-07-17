@@ -7,7 +7,7 @@ import './UperPart.css';
 const UperPart = () => {
     return (
         <div className="body">
-            <Container >
+            <Container className="p-2">
                 <Row className="d-flex align-items-center">
                     <Col>
                         <h1>A learning platform that helps you to learning faster</h1>
