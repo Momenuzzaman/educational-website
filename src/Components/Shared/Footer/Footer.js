@@ -1,9 +1,13 @@
 import React from 'react';
+import logo from '../../../image/nav.png';
 
 const Footer = () => {
     return (
         <div>
-            <h1>Footer</h1>
+            <div>
+                <img src={logo} alt="" />
+                <p>We support programs that create advancement for people</p>
+            </div>
         </div>
     );
 };
