@@ -11,7 +11,7 @@ const Topics = () => {
             .then(data => setTopic(data));
     }, []);
     return (
-        <div className=" color">
+        <div className=" color" id="topics" >
             <div className="container" >
                 <h1>Featured topics by category</h1>
                 <div className="topic">
