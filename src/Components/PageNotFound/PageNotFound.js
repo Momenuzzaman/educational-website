@@ -4,7 +4,7 @@ import error from '../../image/error.jpg';
 const PageNotFound = () => {
     return (
         <div>
-            <img src={error} alt="" />
+            <img src={error} width="100%" alt="" />
         </div>
     );
 };

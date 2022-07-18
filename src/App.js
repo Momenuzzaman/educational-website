@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Shared/Header/Header';
 import Home from './Components/Home/Home/Home';
 import { Route, Routes } from 'react-router-dom';
+import PageNotFound from './Components/PageNotFound/PageNotFound';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       {/* <Home /> */}
       <Footer />
