@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Tutorials from './Components/Home/Tutorials/Tutorials';
 import Cart from './Components/Cart/Cart';
+import TutorialDetail from './Components/Home/TutorialDetais/TutorialDetail';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/course" element={<Tutorials />} />
+        <Route path="/tutorialDetail" element={<TutorialDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
