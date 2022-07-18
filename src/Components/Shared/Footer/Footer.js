@@ -15,7 +15,7 @@ const Footer = () => {
                 <div >
                     <img src={logo} width="50%" alt="" />
                     <p>We support programs that create advancement for people</p>
-                    <div>
+                    <div className="btn-icon">
                         <button className="button-icon"><FacebookIcon /></button>
                         <button className="button-icon"><GitHubIcon /></button>
                         <button className="button-icon"><InstagramIcon /></button>
