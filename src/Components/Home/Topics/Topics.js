@@ -12,7 +12,7 @@ const Topics = () => {
     }, []);
     return (
         <div className="color" >
-            <h1>Top Rated Learning Tutorials</h1>
+            <h1>Featured topics by category</h1>
             <div className="topic">
                 {
                     topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)

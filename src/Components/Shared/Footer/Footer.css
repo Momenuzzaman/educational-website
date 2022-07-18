@@ -19,3 +19,9 @@
 .footer-link:hover {
   color: lightseagreen;
 }
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  border: 1px solid black;
+}
