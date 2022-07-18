@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div>
             <>
-                <Navbar bg="light" variant="dark" sticky="top" className="nav" collapseOnSelect expand="lg">
+                <Navbar bg="light" variant="dark" className="nav" sticky="top" collapseOnSelect expand="lg">
                     <Container>
                         <Navbar.Brand href="#home">
                             <img src={logo} height="34" alt="" />
@@ -23,7 +23,6 @@ const Header = () => {
                             <Nav.Link className="nav-font" as={HashLink} to="/#home">Home</Nav.Link>
                             <Nav.Link className="nav-font" as={HashLink} to="/#courses">Courses</Nav.Link>
                             <Nav.Link className="nav-font" as={HashLink} to="/#topics">Topics</Nav.Link>
-                            <Nav.Link className="nav-font" as={HashLink} to="/#Page">Page</Nav.Link>
                             <Form className="d-flex">
                                 <Form.Control
                                     type="search"
