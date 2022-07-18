@@ -2,11 +2,12 @@
   background-color: white;
   border: 1px solid lightseagreen;
   color: lightseagreen;
-  width: 50px;
+  width: 4%;
   border-radius: 50px;
-  padding: 8px;
+  padding: 5px;
 }
 
 .button-icon:hover {
   background-color: lightseagreen;
+  color: white;
 }
