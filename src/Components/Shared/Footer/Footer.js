@@ -6,6 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+import DraftsIcon from '@mui/icons-material/Drafts';
 
 const Footer = () => {
     return (
@@ -42,7 +43,7 @@ const Footer = () => {
             <div>
                 <h4>Contact Us</h4>
                 <p><PermContactCalendarIcon /> +880 1400 374808</p>
-                <p>mdmomenuzzamanemon@gmail.com</p>
+                <p><DraftsIcon />mdmomenuzzamanemon@gmail.com</p>
             </div>
         </div >
     );
