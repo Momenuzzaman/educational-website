@@ -19,7 +19,7 @@ const Header = () => {
                         </Navbar.Brand>
                         <Navbar.Toggle className="nav-toggle" />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link className="nav-font" href="#home">Home</Nav.Link>
+                            <Nav.Link className="nav-font" href="/home#home">Home</Nav.Link>
                             <Nav.Link className="nav-font" href="#courses">Courses</Nav.Link>
                             <Nav.Link className="nav-font" href="#blog">Blog</Nav.Link>
                             <Nav.Link className="nav-font" href="#Page">Page</Nav.Link>
