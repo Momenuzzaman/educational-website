@@ -42,9 +42,9 @@ const Footer = () => {
             </div>
             <div>
                 <h4>Contact Us</h4>
-                <p><PermContactCalendarIcon /> +880 1400 374808</p>
-                <p><DraftsIcon />mdmomenuzzamanemon@gmail.com</p>
-                <p><PlaceIcon />Dhaka,Bangladesh</p>
+                <p><PermContactCalendarIcon className="button-icon" /> +880 1400 374808</p>
+                <p><DraftsIcon className="button-icon" /> mdmomenuzzamanemon@gmail.com</p>
+                <p><PlaceIcon className="button-icon" /> Dhaka,Bangladesh</p>
             </div>
         </div >
     );
