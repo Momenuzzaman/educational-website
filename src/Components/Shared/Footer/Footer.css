@@ -6,3 +6,7 @@
   border-radius: 50px;
   padding: 8px;
 }
+
+.button-icon:hover {
+  background-color: lightseagreen;
+}
