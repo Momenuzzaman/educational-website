@@ -17,7 +17,7 @@ const Footer = () => {
                     <p>We support programs that create advancement for people</p>
                     <div className="btn-icon">
                         <a href="https://www.facebook.com/md.eamon.5205/" className="button-icon"><FacebookIcon /></a>
-                        <button className="button-icon"><GitHubIcon /></button>
+                        <a href="https://github.com/mdemon420" className="button-icon"><GitHubIcon /></a>
                         <button className="button-icon"><InstagramIcon /></button>
                     </div>
                 </div>
