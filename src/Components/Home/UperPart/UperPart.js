@@ -1,10 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import img from '../../../image/main.png';
 import './UperPart.css';
 
 
 const UperPart = () => {
+    const navigate = useNavigate();
+    const handleAllCourse = () => {
+        navigate("/#courses")
+    }
     return (
         <div className="body">
             <Container >
