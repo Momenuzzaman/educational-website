@@ -1,3 +1,9 @@
+.footer-color {
+  background-color: #f6f7f9;
+  padding-top: 50px;
+  border-top: 1px solid lightseagreen;
+  padding-bottom: 60px;
+}
 .button-icon {
   background-color: white;
   border: 1px solid lightseagreen;
@@ -23,5 +29,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
-  border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

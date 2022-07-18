@@ -11,14 +11,16 @@ const Topics = () => {
             .then(data => setTopic(data));
     }, []);
     return (
-        <div className="color" >
-            <h1>Featured topics by category</h1>
-            <div className="topic">
-                {
-                    topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
-                }
-            </div>
-        </div >
+        <div className=" color">
+            <div className="container" >
+                <h1>Featured topics by category</h1>
+                <div className="topic">
+                    {
+                        topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
+                    }
+                </div>
+            </div >
+        </div>
     );
 };
 

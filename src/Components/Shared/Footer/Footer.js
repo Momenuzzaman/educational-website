@@ -10,43 +10,45 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 import PlaceIcon from '@mui/icons-material/Place';
 const Footer = () => {
     return (
-        <div className=" footer container">
-            <div >
-                <img src={logo} width="50%" alt="" />
-                <p>We support programs that create advancement for people</p>
-                <div>
-                    <button className="button-icon"><FacebookIcon /></button>
-                    <button className="button-icon"><GitHubIcon /></button>
-                    <button className="button-icon"><InstagramIcon /></button>
+        <div className="footer-color">
+            <div className=" footer container">
+                <div >
+                    <img src={logo} width="50%" alt="" />
+                    <p>We support programs that create advancement for people</p>
+                    <div>
+                        <button className="button-icon"><FacebookIcon /></button>
+                        <button className="button-icon"><GitHubIcon /></button>
+                        <button className="button-icon"><InstagramIcon /></button>
+                    </div>
                 </div>
-            </div>
-            <div >
-                <h4>Useful links</h4>
-                <Link className="footer-link" to="/aboutUs">About Us</Link>
-                <br />
-                <Link className="footer-link" to="/privacyPolicy">Privacy Policy</Link>
-                <br />
-                <Link className="footer-link" to="/terms">Terms & Conditions</Link>
-                <br />
-                <Link className="footer-link" to="/Student">Student spotlight</Link>
-            </div>
-            <div >
-                <h4>Learning</h4>
-                <Link className="footer-link" to="/business">Business Strategy</Link>
-                <br />
-                <Link className="footer-link" to="/become">Become A Teacher</Link>
-                <br />
-                <Link className="footer-link" to="/project">Project Management</Link>
-                <br />
-                <Link className="footer-link" to="/membership">Membership</Link>
-            </div>
-            <div >
-                <h4>Contact Us</h4>
-                <p><PermContactCalendarIcon className="button-icon" /> +880 1400 374808</p>
-                <p><DraftsIcon className="button-icon" /> mdmomenuzzamanemon@gmail.com</p>
-                <p><PlaceIcon className="button-icon" /> Dhaka,Bangladesh</p>
-            </div>
-        </div >
+                <div >
+                    <h4>Useful links</h4>
+                    <Link className="footer-link" to="/aboutUs">About Us</Link>
+                    <br />
+                    <Link className="footer-link" to="/privacyPolicy">Privacy Policy</Link>
+                    <br />
+                    <Link className="footer-link" to="/terms">Terms & Conditions</Link>
+                    <br />
+                    <Link className="footer-link" to="/Student">Student spotlight</Link>
+                </div>
+                <div >
+                    <h4>Learning</h4>
+                    <Link className="footer-link" to="/business">Business Strategy</Link>
+                    <br />
+                    <Link className="footer-link" to="/become">Become A Teacher</Link>
+                    <br />
+                    <Link className="footer-link" to="/project">Project Management</Link>
+                    <br />
+                    <Link className="footer-link" to="/membership">Membership</Link>
+                </div>
+                <div >
+                    <h4>Contact Us</h4>
+                    <p><PermContactCalendarIcon className="button-icon" /> +880 1400 374808</p>
+                    <p><DraftsIcon className="button-icon" /> mdmomenuzzamanemon@gmail.com</p>
+                    <p><PlaceIcon className="button-icon" /> Dhaka,Bangladesh</p>
+                </div>
+            </div >
+        </div>
     );
 };
 
