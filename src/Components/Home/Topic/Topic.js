@@ -7,7 +7,7 @@ const Topic = ({ topic }) => {
         <div className="container">
             <div className="box">
                 <img src={img} height="40px" alt={img} />
-                <span>{name}</span>
+                <h4>{name}</h4>
             </div>
         </div >
     );
