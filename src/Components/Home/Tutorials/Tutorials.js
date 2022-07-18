@@ -11,7 +11,7 @@ const Tutorials = () => {
             .then(data => setTutorial(data));
     }, []);
     return (
-        <div className=" container tutorials" >
+        <div className=" container tutorials" id="courses" >
             <div className="rated">
                 <h1 >Top Rated Learning Tutorials {tutorials.length}</h1>
             </div>

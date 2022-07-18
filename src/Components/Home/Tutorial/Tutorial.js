@@ -5,7 +5,7 @@ import './Tutorial.css';
 const Tutorial = ({ tutorial }) => {
     const { title, name, img, price } = tutorial;
     return (
-        <div className=" g-5 col-sm-12 col-md-6 col-lg-4">
+        <div className=" g-5 col-sm-12 col-md-6 col-lg-4" id="courses">
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>

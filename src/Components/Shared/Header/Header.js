@@ -20,10 +20,10 @@ const Header = () => {
                         </Navbar.Brand>
                         <Navbar.Toggle className="nav-toggle" />
                         <Navbar.Collapse className="justify-content-end">
-                            <Nav.Link className="nav-font" as={HashLink} to="/home#home">Home</Nav.Link>
-                            <Nav.Link className="nav-font" as={HashLink} to="#courses">Courses</Nav.Link>
-                            <Nav.Link className="nav-font" as={HashLink} to="#blog">Blog</Nav.Link>
-                            <Nav.Link className="nav-font" as={HashLink} to="#Page">Page</Nav.Link>
+                            <Nav.Link className="nav-font" as={HashLink} to="/#home">Home</Nav.Link>
+                            <Nav.Link className="nav-font" as={HashLink} to="/#courses">Courses</Nav.Link>
+                            <Nav.Link className="nav-font" as={HashLink} to="/#blog">Blog</Nav.Link>
+                            <Nav.Link className="nav-font" as={HashLink} to="/#Page">Page</Nav.Link>
                             <Form className="d-flex">
                                 <Form.Control
                                     type="search"
