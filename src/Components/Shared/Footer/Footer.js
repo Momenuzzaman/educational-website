@@ -41,7 +41,8 @@ const Footer = () => {
             </div>
             <div>
                 <h4>Contact Us</h4>
-                <p><PermContactCalendarIcon /> +91 458 654 528</p>
+                <p><PermContactCalendarIcon /> +880 1400 374808</p>
+                <p>mdmomenuzzamanemon@gmail.com</p>
             </div>
         </div >
     );
