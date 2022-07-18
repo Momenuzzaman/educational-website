@@ -21,6 +21,22 @@ const Footer = () => {
             <div>
                 <h4>Useful links</h4>
                 <Link to="/aboutUs">About Us</Link>
+                <br />
+                <Link to="/privacyPolicy">Privacy Policy</Link>
+                <br />
+                <Link to="/terms">Terms & Conditions</Link>
+                <br />
+                <Link to="/Student">Student spotlight</Link>
+            </div>
+            <div>
+                <h4>Learning</h4>
+                <Link to="/business">Business Strategy</Link>
+                <br />
+                <Link to="/become">Become A Teacher</Link>
+                <br />
+                <Link to="/project">Project Management</Link>
+                <br />
+                <Link to="/membership">Membership</Link>
             </div>
         </div >
     );
