@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import useTutorial from '../../../hooks/useTutorial';
 import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 
 const Tutorials = () => {
-    const [tutorials, setTutorial] = useState([]);
+    const [tutorials] = useTutorial();
+    console.log(tutorials);
+    // const [tutorials, setTutorial] = useState([]);
 
-    useEffect(() => {
-        fetch("education.json")
-            .then(res => res.json())
-            .then(data => setTutorial(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch("education.json")
+    //         .then(res => res.json())
+    //         .then(data => setTutorial(data));
+    // }, []);
     return (
         <div className=" container tutorials" id="courses" >
             <div className="rated">
