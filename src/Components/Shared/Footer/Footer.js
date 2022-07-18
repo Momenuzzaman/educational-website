@@ -38,6 +38,9 @@ const Footer = () => {
                 <br />
                 <Link to="/membership">Membership</Link>
             </div>
+            <div>
+                <h4>Contact Us</h4>
+            </div>
         </div >
     );
 };
