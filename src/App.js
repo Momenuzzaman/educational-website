@@ -6,6 +6,7 @@ import Header from './Components/Shared/Header/Header';
 import Home from './Components/Home/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
+import Tutorials from './Components/Home/Tutorials/Tutorials';
 function App() {
   return (
     <div className="App">
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/course" element={<Tutorials />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />

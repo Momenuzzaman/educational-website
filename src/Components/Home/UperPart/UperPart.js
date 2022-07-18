@@ -8,8 +8,9 @@ import './UperPart.css';
 const UperPart = () => {
     const navigate = useNavigate();
     const handleAllCourse = () => {
-        navigate("/#courses")
-    }
+        navigate("/course");
+
+    };
     return (
         <div className="body">
             <Container >
@@ -17,7 +18,7 @@ const UperPart = () => {
                     <Col>
                         <h1>A learning platform that helps you to learning faster</h1>
                         <p>World-class training and development programs developed by top teachers</p>
-                        <button className="btn-top">Expore All Course</button>
+                        <button onClick={handleAllCourse} className="btn-top">Expore All Course</button>
                     </Col>
                     <Col>
                         <img src={img} height="80%" alt="" />
