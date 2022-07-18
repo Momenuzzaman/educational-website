@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from '../../../image/nav.png';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import FacebookIcon from '@mui/icons-material/FacebookRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,7 +12,15 @@ const Footer = () => {
             <div>
                 <img src={logo} alt="" />
                 <p>We support programs that create advancement for people</p>
-                <button className="button-icon"><FacebookRoundedIcon /></button>
+                <div>
+                    <button className="button-icon"><FacebookIcon /></button>
+                    <button className="button-icon"><GitHubIcon /></button>
+                    <button className="button-icon"><InstagramIcon /></button>
+                </div>
+            </div>
+            <div>
+                <h4>Useful links</h4>
+                <Link to="/aboutUs">About Us</Link>
             </div>
         </div >
     );
