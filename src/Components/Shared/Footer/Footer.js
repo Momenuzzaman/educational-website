@@ -16,7 +16,7 @@ const Footer = () => {
                     <img src={logo} width="50%" alt="" />
                     <p>We support programs that create advancement for people</p>
                     <div className="btn-icon">
-                        <button className="button-icon"><FacebookIcon /></button>
+                        <a href="https://www.facebook.com/md.eamon.5205/" className="button-icon"><FacebookIcon /></a>
                         <button className="button-icon"><GitHubIcon /></button>
                         <button className="button-icon"><InstagramIcon /></button>
                     </div>
