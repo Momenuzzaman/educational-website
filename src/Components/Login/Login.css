@@ -1,10 +1,10 @@
 .form {
+  padding-top: 60px;
   margin-top: 40px;
   margin-bottom: 40px;
-  background-color: rgb(206, 241, 240);
   /* border: 2px solid lightseagreen; */
   border-radius: 10px;
-  box-shadow: 0 0 10px lightseagreen;
+  box-shadow: 0 0 6px gray;
   height: 600px;
   width: 500px;
 }
