@@ -8,3 +8,7 @@
 .nav-toggle {
   background-color: lightseagreen;
 }
+.link {
+  text-decoration: none;
+  margin-left: 8px;
+}

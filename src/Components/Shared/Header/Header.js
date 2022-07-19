@@ -33,8 +33,8 @@ const Header = () => {
                                 />
                                 <Button variant="outline-success">Search</Button>
                             </Form>
-                            <Link className="nav-font" to="/Register">Register</Link>
-                            <Link className="nav-font" to="/login">Login</Link>
+                            <Link className="nav-font link" to="/Register">Register</Link>
+                            <Link className="nav-font link" to="/login">Login</Link>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
