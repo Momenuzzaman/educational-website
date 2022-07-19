@@ -10,6 +10,7 @@ import Tutorials from './Components/Home/Tutorials/Tutorials';
 import Cart from './Components/Cart/Cart';
 import TutorialDetail from './Components/Home/TutorialDetais/TutorialDetail';
 import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
         <Route path="/tutorialDetail/:tutorialId" element={<TutorialDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
