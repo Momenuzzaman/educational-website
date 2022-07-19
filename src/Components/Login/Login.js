@@ -7,7 +7,7 @@ import './Login.css';
 const Login = () => {
     return (
         <div>
-            <img src={img} alt="" />
+            <img src={img} className="img" alt="" />
             <div className="container form">
                 <Form>
                     <h2>Login</h2>

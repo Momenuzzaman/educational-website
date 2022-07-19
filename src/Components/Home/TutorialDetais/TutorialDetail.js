@@ -8,7 +8,7 @@ const TutorialDetail = () => {
 
     return (
         <div>
-            {/* <h1>{tutorialsDetail.title}</h1> */}
+            <h1>{tutorialsDetail.title}</h1>
             <h1>This is a tutorial {tutorialId}</h1>
         </div>
     );

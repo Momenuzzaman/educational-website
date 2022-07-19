@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import PlaceIcon from '@mui/icons-material/Place';
+
 const Footer = () => {
     return (
         <div className="footer-color">
