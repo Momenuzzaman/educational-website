@@ -4,7 +4,6 @@ import './Tutorials.css';
 
 const Tutorials = () => {
     const [tutorials] = useTutorial();
-    console.log(tutorials);
     // const [tutorials, setTutorial] = useState([]);
 
     // useEffect(() => {

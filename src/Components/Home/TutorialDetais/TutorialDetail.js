@@ -3,12 +3,12 @@ import useTutorialDetail from '../../../hooks/useTutorialDetail';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
-    const { tutorialsDetails } = useTutorialDetail(tutorialId);
+    const { tutorialsDetail } = useTutorialDetail(tutorialId);
+    console.log(tutorialsDetail);
 
-    console.log(tutorialsDetails);
     return (
         <div>
-
+            {/* <h1>{tutorialsDetail.title}</h1> */}
             <h1>This is a tutorial {tutorialId}</h1>
         </div>
     );

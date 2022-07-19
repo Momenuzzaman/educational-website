@@ -6,6 +6,7 @@ import logo from '../../../image/nav.png';
 import Form from 'react-bootstrap/Form';
 import './Header.css';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -13,7 +14,7 @@ const Header = () => {
     return (
         <div>
             <>
-                <Navbar bg="light" variant="dark" className="nav fixed-top" collapseOnSelect expand="lg">
+                <Navbar bg="light" variant="dark" className="nav" collapseOnSelect expand="lg">
                     <Container>
                         <Navbar.Brand href="#home">
                             <img src={logo} height="34" alt="" />
@@ -32,6 +33,8 @@ const Header = () => {
                                 />
                                 <Button variant="outline-success">Search</Button>
                             </Form>
+
+                            <Link className="nav-font" to="/login">Login</Link>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
