@@ -1,10 +1,11 @@
 import { useParams } from 'react-router-dom';
-import useTutorial from '../../../hooks/useTutorial';
+import useTutorialDetail from '../../../hooks/useTutorialDetail';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
-    const [tutorials] = useTutorial();
-    console.log(tutorials);
+    const { tutorialsDetails } = useTutorialDetail(tutorialId);
+
+    console.log(tutorialsDetails);
     return (
         <div>
 

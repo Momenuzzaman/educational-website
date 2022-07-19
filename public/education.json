@@ -22,7 +22,7 @@
     "price": 29
   },
   {
-    "id": "3",
+    "id": 3,
     "name": "Basic Level Youth Health and Cooking",
     "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/03/FOO634-740x540.jpeg",
     "title": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",
@@ -33,7 +33,7 @@
     "price": 39
   },
   {
-    "id": "4",
+    "id": 4,
     "name": "Drawing and Painting Course for Children",
     "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/02/PRO833-740x540.jpeg",
     "title": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",
@@ -44,7 +44,7 @@
     "price": 15
   },
   {
-    "id": "5",
+    "id": 5,
     "name": "WordPress Beginner to Advanced Course",
     "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2022/02/BIRR267-740x540.jpeg",
     "title": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",
@@ -55,7 +55,7 @@
     "price": 30
   },
   {
-    "id": "6",
+    "id": 6,
     "name": "Complete Digital Marketing Course",
     "img": "https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2020/09/BLP08-740x540.jpeg",
     "title": "This tutorial will help you learn quickly and thoroughly. Lorem ipsum is dummy text used in laying out print, graphic or web designs",

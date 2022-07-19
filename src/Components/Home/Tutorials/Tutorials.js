@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import useTutorial from '../../../hooks/useTutorial';
 import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
@@ -23,7 +22,6 @@ const Tutorials = () => {
                     tutorials.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial}></Tutorial>)
                 }
             </div>
-
         </div>
     );
 };
