@@ -6,6 +6,7 @@ import img from '../../image/cart.jpeg';
 const Register = () => {
     return (
         <div>
+            <img src={img} alt="" />
             <div className="container form">
                 <Form>
                     <h2>Register</h2>
