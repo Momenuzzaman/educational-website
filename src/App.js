@@ -9,6 +9,7 @@ import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Tutorials from './Components/Home/Tutorials/Tutorials';
 import Cart from './Components/Cart/Cart';
 import TutorialDetail from './Components/Home/TutorialDetais/TutorialDetail';
+import Login from './Components/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/course" element={<Tutorials />} />
         <Route path="/tutorialDetail/:tutorialId" element={<TutorialDetail />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
