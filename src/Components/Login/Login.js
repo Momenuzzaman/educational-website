@@ -2,6 +2,7 @@ import React from 'react';
 import img from '../../image/cart.jpeg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import './Login.css';
 
 const Login = () => {
     return (
