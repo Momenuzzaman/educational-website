@@ -5,10 +5,9 @@ import Button from 'react-bootstrap/Button';
 const Register = () => {
     return (
         <div>
-
             <div className="container form">
                 <Form>
-                    <h2>Login</h2>
+                    <h2>Register</h2>
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
