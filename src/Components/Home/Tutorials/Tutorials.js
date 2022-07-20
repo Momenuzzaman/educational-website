@@ -1,5 +1,4 @@
-import useTutorials from '../../../hooks/useTutorial';
-// import useTutorial from '../../../hooks/useTutorial';
+
 import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
