@@ -12,19 +12,19 @@ const TutorialDetail = () => {
 
     return (
         <div>
-            <div className="detail ">
+            <div className="detail g-5 col-sm-12 col-md-6 col-lg-4" >
                 <div className=" container">
-                    <div className=" background ">
+                    <div className=" background  ">
                         <h1>{name}</h1>
                         <br />
                         <p>{title}</p>
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container last">
                 <h4>{description}</h4>
                 <br />
-                <Card style={{ width: '25rem' }}>
+                <Card style={{ width: '25rem' }} className="container">
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>${price}</Card.Title>
@@ -37,9 +37,8 @@ const TutorialDetail = () => {
                         <ListGroup.Item>End : {end} </ListGroup.Item>
                         <ListGroup.Item>Duration : {duration}</ListGroup.Item>
                     </ListGroup>
-                    <Card.Body >
-                        <button className="btn-top">Go to Home</button>
-                        <button className="btn-top">Courses</button>
+                    <Card.Body>
+                        <button className="btn-top ">Go to Home</button>
                     </Card.Body>
                 </Card>
             </div>
