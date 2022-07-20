@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const useTutorial = () => {
     const [tutorials, setTutorial] = useState([]);
     useEffect(() => {
-        fetch("education.json")
+        fetch("http://localhost:3000/education.json")
             .then(res => res.json())
             .then(data => setTutorial(data));
     }, []);

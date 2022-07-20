@@ -1,14 +1,17 @@
 import { useParams } from 'react-router-dom';
-import useTutorialDetail from '../../../hooks/useTutorialDetail';
+import useTutorials from '../../../hooks/UseTutorials';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
-    const { tutorialsDetail } = useTutorialDetail(tutorialId);
-    console.log(tutorialsDetail);
+
+    const [tutorials] = useTutorials();
+
+    const tutorial = tutorials.find(tutorial => tutorial.id === +tutorialId);
+    console.log(tutorial);
 
     return (
         <div>
-            <h1>{tutorialsDetail.title}</h1>
+            {tutorial.name}
             <h1>This is a tutorial {tutorialId}</h1>
         </div>
     );

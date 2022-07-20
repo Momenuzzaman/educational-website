@@ -5,6 +5,7 @@ export const TutorialContext = createContext();
 
 const TutorialProvider = ({ children }) => {
     const AllContext = useTutorial();
+    console.log(AllContext);
     return (
         <TutorialContext.Provider value={AllContext}>
             {children}
