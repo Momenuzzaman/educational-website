@@ -26,7 +26,7 @@ const TutorialDetail = () => {
                 <div>
                     <div>
                         <div>
-
+                            <img src={img} alt="" />
                         </div>
                         <p> You Start on : <span>{start}</span> </p>
                         <p>Course will end : <span>{end}</span> </p>
