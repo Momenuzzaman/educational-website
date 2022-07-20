@@ -1,4 +1,4 @@
-const data = [
+const fakeData = [
     {
         id: 1,
         name: "Absolute Beginners Cooking Course",
@@ -66,3 +66,5 @@ const data = [
         price: 10
     }
 ];
+
+export default fakeData;

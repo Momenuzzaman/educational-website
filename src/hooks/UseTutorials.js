@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { TutorialContext } from "../Context/TutorialProvider/TutorialProvider";
+// import { useContext } from "react";
+// import { TutorialContext } from "../Context/TutorialProvider/TutorialProvider";
 
-const useTutorials = () => {
-    return useContext(TutorialContext);
-};
+// const useTutorials = () => {
+//     return useContext(TutorialContext);
+// };
 
-export default useTutorials;
+// export default useTutorials;

@@ -1,12 +1,11 @@
 import { useParams } from 'react-router-dom';
-import useTutorials from '../../../hooks/UseTutorials';
+import fakeData from '../../../FakeData/Fakedata';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
 
-    const [tutorials] = useTutorials();
 
-    const tutorial = tutorials.find(tutorial => tutorial.id === +tutorialId);
+    const tutorial = fakeData.find(tutorial => tutorial.id === +tutorialId);
     console.log(tutorial);
 
     return (
