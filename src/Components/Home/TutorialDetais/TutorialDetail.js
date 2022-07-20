@@ -11,8 +11,11 @@ const TutorialDetail = () => {
 
     return (
         <div className="detail">
-            <h1></h1>
-            <h1>This is a tutorial {tutorialId}</h1>
+            <div className=" container ">
+                <h1>{name}</h1>
+                <br />
+                <p>{title}</p>
+            </div>
         </div>
     );
 };

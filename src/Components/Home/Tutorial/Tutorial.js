@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
+import './Tutorial.css';
 
 const Tutorial = ({ tutorial }) => {
     const { id, name, img, price } = tutorial;
