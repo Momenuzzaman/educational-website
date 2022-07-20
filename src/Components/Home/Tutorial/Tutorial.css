@@ -14,3 +14,8 @@
 .price {
   font-weight: bold;
 }
+.add-cart {
+  background-color: rgb(190, 223, 233);
+  padding-left: 90px;
+  padding-right: 90px;
+}
