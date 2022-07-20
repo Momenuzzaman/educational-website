@@ -5,9 +5,7 @@ import './TutorialDetail.css';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
-
     const tutorial = fakeData.find(tutorial => tutorial.id === +tutorialId);
-
     const { name, description, price, title, end, duration, start, img } = tutorial;
 
     return (
@@ -18,14 +16,14 @@ const TutorialDetail = () => {
                         <h1>{name}</h1>
                         <br />
                         <p>{title}</p>
+                        <br />
+                        <p>{description}</p>
                     </div>
                 </div>
             </div>
             <div className="container last">
-                <h4>{description}</h4>
-                <br />
-                <Card style={{ width: '25rem' }} className="container">
-                    <Card.Img variant="top" src={img} />
+                <Card style={{ width: '25rem' }} >
+                    <Card.Img variant="top" width="100%" src={img} />
                     <Card.Body>
                         <Card.Title>${price}</Card.Title>
                         <Card.Text>
