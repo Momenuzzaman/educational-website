@@ -39,10 +39,9 @@ const TutorialDetail = () => {
                         <ListGroup.Item>End : {end} </ListGroup.Item>
                         <ListGroup.Item>Duration : {duration}</ListGroup.Item>
                     </ListGroup>
-                    <Card.Body>
-                        <button className="btn-top" onClick={handleBackHome}>Courses</button>
-                    </Card.Body>
                 </Card>
+                <br></br>
+                <button className="btn-top" onClick={handleBackHome}>Go Home</button>
             </div>
         </div>
     );

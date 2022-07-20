@@ -23,7 +23,7 @@ const Tutorial = ({ tutorial }) => {
                         </Card.Text>
                     </div>
                     <Card.Title>{name}</Card.Title>
-                    <button className="cart-button add-cart">Add to Cart</button>
+                    <button className="cart-button add-cart" >Add To Cart</button>
                 </Card.Body>
             </Card>
         </div>
