@@ -5,8 +5,8 @@ import fakeData from '../../../FakeData/Fakedata';
 import { useState } from 'react';
 
 const Tutorials = () => {
-    const [products, setProducts] = useState(fakeData);
-    console.log(products);
+    const [tutorials, setProducts] = useState(fakeData);
+
     return (
         <div className=" container tutorials" id="courses" >
             <div className="rated">
@@ -14,7 +14,7 @@ const Tutorials = () => {
             </div>
             <div className="row">
                 {
-                    products.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial}></Tutorial>)
+                    tutorials.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial}></Tutorial>)
                 }
             </div>
         </div>
