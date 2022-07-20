@@ -12,14 +12,17 @@ const TutorialDetail = () => {
 
     return (
         <div>
-            <div className="detail">
-                <div className=" container ">
-                    <h1>{name}</h1>
-                    <br />
-                    <p>{title}</p>
+            <div className="detail ">
+                <div className=" container">
+                    <div className=" background ">
+                        <h1>{name}</h1>
+                        <br />
+                        <p>{title}</p>
+                    </div>
                 </div>
             </div>
             <div className="container">
+                <p>{description}</p>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
