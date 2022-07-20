@@ -22,6 +22,8 @@ const TutorialDetail = () => {
                 </div>
             </div>
             <div className="container">
+                <h4>{description}</h4>
+                <br />
                 <Card style={{ width: '25rem' }}>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
@@ -33,11 +35,11 @@ const TutorialDetail = () => {
                     <ListGroup className="list-group-flush">
                         <ListGroup.Item>Start : {start} </ListGroup.Item>
                         <ListGroup.Item>End : {end} </ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                        <ListGroup.Item>Duration : {duration}</ListGroup.Item>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link href="#">Card Link</Card.Link>
-                        <Card.Link href="#">Another Link</Card.Link>
+                        <button></button>
+
                     </Card.Body>
                 </Card>
             </div>
