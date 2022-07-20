@@ -1,11 +1,13 @@
 import React, { createContext } from 'react';
+import useTutorial from '../../hooks/useTutorial';
+
 export const TutorialContext = createContext();
 
-const TutorialProvider = () => {
-
+const TutorialProvider = ({ children }) => {
+    const AllContext = useTutorial();
     return (
-        <TutorialContext.Provider>
-
+        <TutorialContext.Provider value={AllContext}>
+            {children}
         </TutorialContext.Provider>
     );
 };
