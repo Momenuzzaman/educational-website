@@ -22,7 +22,6 @@ const Tutorial = ({ tutorial }) => {
                         </Card.Text>
                     </div>
                     <Card.Title>{name}</Card.Title>
-
                 </Card.Body>
             </Card>
         </div>
