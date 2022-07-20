@@ -31,6 +31,7 @@ const TutorialDetail = () => {
                         <p> You Start on : <span>{start}</span> </p>
                         <p>Course will end : <span>{end}</span> </p>
                     </div>
+                    <p> Duration  : <span>{duration}</span> </p>
                 </div>
             </div>
         </div>
