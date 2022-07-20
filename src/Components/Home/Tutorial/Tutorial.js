@@ -5,6 +5,7 @@ import './Tutorial.css';
 
 const Tutorial = ({ tutorial }) => {
     const { id, name, img, price } = tutorial;
+    console.log(tutorial);
     const navigate = useNavigate();
     const handleDetail = () => {
         navigate(`/tutorialDetail/${id}`);

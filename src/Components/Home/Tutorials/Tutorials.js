@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Tutorials = () => {
     const [tutorials, setProducts] = useState(fakeData);
+    console.log(tutorials);
 
     return (
         <div className=" container tutorials" id="courses" >

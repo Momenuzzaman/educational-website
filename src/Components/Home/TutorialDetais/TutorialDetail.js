@@ -9,6 +9,9 @@ const TutorialDetail = () => {
     const { name, description, price, title, end, duration, start, img } = tutorial;
 
     const navigate = useNavigate();
+    const handleBackHome = () => {
+        navigate("/");
+    };
     return (
         <div>
             <div className="detail g-5 col-sm-12 col-md-6 col-lg-4" >
@@ -37,7 +40,7 @@ const TutorialDetail = () => {
                         <ListGroup.Item>Duration : {duration}</ListGroup.Item>
                     </ListGroup>
                     <Card.Body>
-                        <button className="btn-top ">Go to Home</button>
+                        <button className="btn-top" onClick={handleBackHome}>Courses</button>
                     </Card.Body>
                 </Card>
             </div>
