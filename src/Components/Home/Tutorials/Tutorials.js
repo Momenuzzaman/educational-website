@@ -10,7 +10,6 @@ const Tutorials = () => {
     return (
         <div className=" container tutorials" id="courses" >
             <div className="rated">
-
             </div>
             <div className="row">
                 {
