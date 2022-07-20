@@ -22,17 +22,24 @@ const TutorialDetail = () => {
                 </div>
             </div>
             <div className="container">
-                <p>{description}</p>
-                <div>
-                    <div>
-                        <div>
-                            <img src={img} alt="" />
-                        </div>
-                        <p> You Start on : <span>{start}</span> </p>
-                        <p>Course will end : <span>{end}</span> </p>
-                    </div>
-                    <p> Duration  : <span>{duration}</span> </p>
-                </div>
+                <Card style={{ width: '25rem' }}>
+                    <Card.Img variant="top" src={img} />
+                    <Card.Body>
+                        <Card.Title>${price}</Card.Title>
+                        <Card.Text>
+                            {name}
+                        </Card.Text>
+                    </Card.Body>
+                    <ListGroup className="list-group-flush">
+                        <ListGroup.Item>Start : {start} </ListGroup.Item>
+                        <ListGroup.Item>End : {end} </ListGroup.Item>
+                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                    </ListGroup>
+                    <Card.Body>
+                        <Card.Link href="#">Card Link</Card.Link>
+                        <Card.Link href="#">Another Link</Card.Link>
+                    </Card.Body>
+                </Card>
             </div>
         </div>
     );
