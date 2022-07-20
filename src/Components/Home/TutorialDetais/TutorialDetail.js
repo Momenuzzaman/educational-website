@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import fakeData from '../../../FakeData/Fakedata';
+import './TutorialDetail.css';
 
 const TutorialDetail = () => {
     const { tutorialId } = useParams();
