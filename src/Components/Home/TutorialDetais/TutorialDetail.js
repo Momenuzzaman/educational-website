@@ -1,5 +1,5 @@
 import { Card, ListGroup } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import fakeData from '../../../FakeData/Fakedata';
 import './TutorialDetail.css';
 
@@ -8,6 +8,7 @@ const TutorialDetail = () => {
     const tutorial = fakeData.find(tutorial => tutorial.id === +tutorialId);
     const { name, description, price, title, end, duration, start, img } = tutorial;
 
+    const navigate = useNavigate();
     return (
         <div>
             <div className="detail g-5 col-sm-12 col-md-6 col-lg-4" >
