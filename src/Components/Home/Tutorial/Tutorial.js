@@ -5,7 +5,6 @@ import './Tutorial.css';
 
 const Tutorial = (props) => {
     const { id, name, img, price } = props.tutorial;
-
     const navigate = useNavigate();
     const handleDetail = () => {
         navigate(`/tutorialDetail/${id}`);
@@ -27,7 +26,6 @@ const Tutorial = (props) => {
                 </Card.Body>
             </Card>
         </div>
-
     );
 };
 

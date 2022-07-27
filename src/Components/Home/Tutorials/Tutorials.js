@@ -6,6 +6,8 @@ import { useState } from 'react';
 
 const Tutorials = () => {
     const [tutorials, setProducts] = useState(fakeData);
+    const [cart, setCart] = useState([]);
+
     console.log(tutorials);
     const handleAddToCart = (product) => {
         console.log(product);
