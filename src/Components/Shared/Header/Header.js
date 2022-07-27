@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import './Header.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 const Header = () => {
@@ -33,13 +34,14 @@ const Header = () => {
                                 />
                                 <Button variant="outline-success">Search</Button>
                             </Form>
+                            <Link className="nav-font link" to="/cart" ><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Link>
                             <Link className="nav-font link" to="/Register">Register</Link>
                             <Link className="nav-font link" to="/login">Login</Link>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
             </>
-        </div>
+        </div >
     );
 };
 
