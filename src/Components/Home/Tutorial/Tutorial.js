@@ -3,9 +3,9 @@ import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Tutorial.css';
 
-const Tutorial = ({ tutorial }) => {
-    const { id, name, img, price } = tutorial;
-    console.log(tutorial);
+const Tutorial = (props) => {
+    const { id, name, img, price } = props.tutorial;
+
     const navigate = useNavigate();
     const handleDetail = () => {
         navigate(`/tutorialDetail/${id}`);
@@ -23,7 +23,7 @@ const Tutorial = ({ tutorial }) => {
                         </Card.Text>
                     </div>
                     <Card.Title>{name}</Card.Title>
-                    <button className="cart-button add-cart" >Add To Cart</button>
+                    <button className="cart-button add-cart" onClick={() => props.handleAddToCart(props.tutorial)}>Add To Cart</button>
                 </Card.Body>
             </Card>
         </div>

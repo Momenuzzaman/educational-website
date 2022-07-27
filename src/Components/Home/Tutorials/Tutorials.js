@@ -9,7 +9,7 @@ const Tutorials = () => {
     console.log(tutorials);
     const handleAddToCart = (product) => {
         console.log(product);
-    }
+    };
 
     return (
         <div className=" container tutorials" id="courses" >
@@ -17,7 +17,10 @@ const Tutorials = () => {
             </div>
             <div className="row">
                 {
-                    tutorials.map(tutorial => <Tutorial key={tutorial.id} tutorial={tutorial} handleAddToCart={handleAddToCart}></Tutorial>)
+                    tutorials.map(tutorial => <Tutorial key={tutorial.id}
+                        tutorial={tutorial}
+                        handleAddToCart={handleAddToCart}
+                    ></Tutorial>)
                 }
             </div>
         </div>
