@@ -10,8 +10,11 @@ const firebase = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user;
-                console.log(user);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
             });
+
     };
     return {
         loggingWithGoogle
