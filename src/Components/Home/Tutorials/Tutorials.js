@@ -13,6 +13,7 @@ const Tutorials = () => {
     const handleAddToCart = (tutorial) => {
         const newCart = [...cart, tutorial];
         setCart(newCart);
+        console.log(newCart);
     };
 
     return (
