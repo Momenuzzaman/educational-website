@@ -3,8 +3,10 @@ import img from '../../image/cart.jpeg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './Login.css';
+import firebase from '../../firebase/firebase';
 
 const Login = () => {
+    const { loggingWithGoogle } = firebase();
     return (
         <div>
             <img src={img} className="img" alt="" />
@@ -25,7 +27,7 @@ const Login = () => {
                     </Button>
                 </Form>
                 <br />
-                <button>Login with Google</button>
+                <button onClick={loggingWithGoogle}>Login with Google</button>
             </div>
         </div>
     );
