@@ -14,7 +14,6 @@ const firebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
             });
-
     };
     return {
         loggingWithGoogle
