@@ -13,25 +13,22 @@ const Tutorials = () => {
     const handleAddToCart = (tutorial) => {
         const newCart = [...cart, tutorial];
         setCart(newCart);
-        console.log(cart);
     };
+
     return (
-        <CartContext.Provider values={cart}>
-            <div className=" container tutorials" id="courses" >
-                <div className="rated">
-                </div>
-                <div className="row">
-                    {
-                        tutorials.map(tutorial => <Tutorial key={tutorial.id}
-                            tutorial={tutorial}
-                            handleAddToCart={handleAddToCart}
-                        ></Tutorial>)
-                    }
-                </div>
+        <div className=" container tutorials" id="courses" >
+            <div className="rated">
             </div>
-            );
-        </CartContext.Provider>
-    
+            <div className="row">
+                {
+                    tutorials.map(tutorial => <Tutorial key={tutorial.id}
+                        tutorial={tutorial}
+                        handleAddToCart={handleAddToCart}
+                    ></Tutorial>)
+                }
+            </div>
+        </div>
+    );
 };
 
 export default Tutorials;
