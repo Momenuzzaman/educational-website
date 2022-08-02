@@ -24,6 +24,8 @@ const Login = () => {
                         Submit
                     </Button>
                 </Form>
+                <br />
+                <button>Login with Google</button>
             </div>
         </div>
     );
