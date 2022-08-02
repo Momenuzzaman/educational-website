@@ -1,10 +1,11 @@
 import firebaseInitialize from "./firebase.init";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 firebaseInitialize();
 
 const firebase = () => {
     const googleProvider = new GoogleAuthProvider();
+    const facebookProvider = new FacebookAuthProvider();
     const auth = getAuth();
     const loggingWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
@@ -14,6 +15,8 @@ const firebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
             });
+        const loginWithFacebook = () => {
+        };
     };
     return {
         loggingWithGoogle
