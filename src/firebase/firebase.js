@@ -7,6 +7,7 @@ const firebase = () => {
     const googleProvider = new GoogleAuthProvider();
     const facebookProvider = new FacebookAuthProvider();
     const auth = getAuth();
+
     const loggingWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
@@ -15,11 +16,17 @@ const firebase = () => {
             .catch((error) => {
                 const errorMessage = error.message;
             });
-        const loginWithFacebook = () => {
-        };
+    };
+    const loginWithFacebook = () => {
+        signInWithPopup(auth, facebookProvider)
+            .then((result) => {
+                const user = result.user;
+                console.log(user);
+            });
     };
     return {
-        loggingWithGoogle
+        loggingWithGoogle, loginWithFacebook
+
     };
 };
 export default firebase;
