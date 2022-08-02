@@ -28,6 +28,7 @@ const Login = () => {
                 </Form>
                 <br />
                 <button onClick={loggingWithGoogle}>Login with Google</button>
+                <button>Login with Facebook</button>
             </div>
         </div>
     );
