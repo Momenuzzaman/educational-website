@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import img from '../../image/cart.jpeg';
 
 const Register = () => {
-    const [] = useState('');
+    const [email, setEmail] = useState('');
     const [] = useState('');
     const [] = useState('');
     const [] = useState('');
