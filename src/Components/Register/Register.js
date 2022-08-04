@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import img from '../../image/cart.jpeg';
 
 const Register = () => {
+    const [] = useState('');
+    const [] = useState('');
+    const [] = useState('');
+    const [] = useState('');
     return (
         <div>
             <img src={img} className="img" alt="" />
