@@ -12,6 +12,9 @@ const Login = () => {
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };
+    const handlePasswordBlur = (event) => {
+        setPassword(event.target.value);
+    };
     const { loggingWithGoogle } = firebase();
     return (
         <div>
@@ -26,7 +29,7 @@ const Login = () => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" required />
+                        <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                     </Form.Group>
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
