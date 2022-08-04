@@ -12,6 +12,9 @@ const Register = () => {
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };
+    const handlePassword = (event) => {
+        setPassword(event.target.value);
+    };
     return (
         <div>
             <img src={img} className="img" alt="" />
@@ -25,7 +28,7 @@ const Register = () => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" required />
+                        <Form.Control onBlur={handlePassword} type="password" placeholder="Password" required />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Confirm Password</Form.Label>
