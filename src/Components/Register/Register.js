@@ -9,6 +9,9 @@ const Register = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
 
+    const handleEmailBlur = (event) => {
+        setEmail(event.target.value);
+    };
     return (
         <div>
             <img src={img} className="img" alt="" />
@@ -18,7 +21,7 @@ const Register = () => {
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" required />
+                        <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
