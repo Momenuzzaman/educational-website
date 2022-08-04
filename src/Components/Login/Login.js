@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from '../../image/cart.jpeg';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -6,6 +6,9 @@ import './Login.css';
 import firebase from '../../firebase/firebase';
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
     const { loggingWithGoogle } = firebase();
     return (
         <div>
