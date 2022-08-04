@@ -18,12 +18,19 @@ const Register = () => {
     const handleConfirmPasswordBlur = (event) => {
         setConfirmPassword(event.target.value);
     };
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (password !== confirmPassword) {
+            return;
+        }
+    };
+
     return (
         <div>
             <img src={img} className="img" alt="" />
             <div className="container form">
-                <Form>
-                    <h2>Register</h2>
+                <h2>Register</h2>
+                <Form onSubmit={handleSubmit}>
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
