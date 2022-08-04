@@ -5,9 +5,10 @@ import img from '../../image/cart.jpeg';
 
 const Register = () => {
     const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [] = useState('');
-    const [] = useState('');
-    const [] = useState('');
+
     return (
         <div>
             <img src={img} className="img" alt="" />
