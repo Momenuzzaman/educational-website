@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import img from '../../image/cart.jpeg';
+import firebase from '../../firebase/firebase';
+
 
 
 const Register = () => {
@@ -18,6 +20,8 @@ const Register = () => {
     const handleConfirmPasswordBlur = (event) => {
         setConfirmPassword(event.target.value);
     };
+    const { createNewUser } = firebase();
+
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -29,6 +33,7 @@ const Register = () => {
             setError("Password must be at least 6 characters");
             return;
         }
+        createNewUser(email, password);
     };
 
     return (

@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDnv_KEOoTeowJBjfQmkJkE3cMtkqikFcg",
-    authDomain: "education-00.firebaseapp.com",
-    projectId: "education-00",
-    storageBucket: "education-00.appspot.com",
-    messagingSenderId: "102783494824",
-    appId: "1:102783494824:web:8f1066ea3f8a16fe6df09d"
+    apiKey: "AIzaSyBneLrjXUcvbD0X-kpBxhB_rzaL2sV2VJ8",
+    authDomain: "react-authentication-sys-00.firebaseapp.com",
+    projectId: "react-authentication-sys-00",
+    storageBucket: "react-authentication-sys-00.appspot.com",
+    messagingSenderId: "53830249129",
+    appId: "1:53830249129:web:5dd7b5de5a5d4ff8d6d7b8"
 };
 
 export default firebaseConfig;
