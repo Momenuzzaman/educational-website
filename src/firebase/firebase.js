@@ -7,6 +7,7 @@ firebaseInitialize();
 
 function Firebase() {
     const [user, setUser] = useState({});
+    const [error, setError] = useState('');
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 
@@ -27,6 +28,10 @@ function Firebase() {
                 const user = result.user;
                 console.log(user);
                 setUser(user);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                setError(errorMessage);
             });
     };
     const logInWithEmail = (email, password) => {
