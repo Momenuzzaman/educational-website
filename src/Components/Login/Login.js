@@ -14,7 +14,7 @@ const Login = () => {
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     };
-    const { loggingWithGoogle } = firebase();
+    const { loggingWithGoogle, logInWithEmail } = firebase();
     return (
         <div>
             <img src={img} className="img" alt="" />
