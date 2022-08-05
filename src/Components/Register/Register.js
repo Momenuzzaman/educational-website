@@ -21,6 +21,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (password !== confirmPassword) {
+            setError("Password did not match");
             return;
         }
     };
@@ -43,10 +44,11 @@ const Register = () => {
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
+                        <p style={{ color: 'red' }}>{error}</p>
                     </Form.Group>
-                    <Button variant="primary" className="btn-top login" type="submit">
+                    <button className="btn-top login" type="submit">
                         Submit
-                    </Button>
+                    </button>
                 </Form>
             </div>
         </div>
