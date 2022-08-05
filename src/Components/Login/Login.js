@@ -7,6 +7,7 @@ import firebase from '../../firebase/firebase';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -15,6 +16,13 @@ const Login = () => {
         setPassword(event.target.value);
     };
     const { loggingWithGoogle, logInWithEmail } = firebase();
+    const handleLogin = (event) => {
+        event.preventDefault();
+        if (password < 6) {
+            set
+        }
+
+    };
     return (
         <div>
             <img src={img} className="img" alt="" />
