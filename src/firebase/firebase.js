@@ -7,7 +7,7 @@ firebaseInitialize();
 
 function Firebase() {
     const [user, setUser] = useState({});
-    const [error, setError] = useState('');
+    const [Error, setError] = useState('');
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
 
@@ -47,7 +47,7 @@ function Firebase() {
             });
     };
     return {
-        loggingWithGoogle, createNewUser, logInWithEmail, error
+        loggingWithGoogle, createNewUser, logInWithEmail, Error
     };
 }
 export default Firebase;
