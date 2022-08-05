@@ -40,6 +40,10 @@ function Firebase() {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                setError(errorMessage);
             });
     };
     return {
