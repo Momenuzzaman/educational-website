@@ -2,17 +2,13 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import img from '../../image/cart.jpeg';
-import auth from '../../firebase/firebaseAuth';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+
 
 const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
-
-    const [] = useCreateUserWithEmailAndPassword(auth);
-
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };
@@ -55,12 +51,12 @@ const Register = () => {
                         <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                         <p style={{ color: 'red' }}>{error}</p>
                     </Form.Group>
-                    <button className="btn-top login" type="submit">
+                    <Button variant="primary" className="btn-top login" type="submit">
                         Submit
-                    </button>
+                    </Button>
                 </Form>
             </div>
-        </div>
+        </div >
     );
 };
 

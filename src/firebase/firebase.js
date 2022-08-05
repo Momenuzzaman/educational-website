@@ -1,6 +1,7 @@
 import firebaseInitialize from "./firebase.init";
-import { GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, FacebookAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from "firebase/auth";
+
 firebaseInitialize();
 
 const firebase = () => {
