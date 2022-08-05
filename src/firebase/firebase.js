@@ -1,5 +1,5 @@
 import firebaseInitialize from "./firebase.init";
-import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { useState } from "react";
 
@@ -26,6 +26,13 @@ function Firebase() {
             .then((result) => {
                 const user = result.user;
                 console.log(user);
+                setUser(user);
+            });
+    };
+    const logInWithEmail = (email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then((result) => {
+                const user = result.user;
                 setUser(user);
             });
     };
