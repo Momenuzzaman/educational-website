@@ -19,6 +19,7 @@ function Firebase() {
             })
             .catch((error) => {
                 const errorMessage = error.message;
+                setError(errorMessage);
             });
     };
     const createNewUser = (email, password) => {
@@ -42,7 +43,7 @@ function Firebase() {
             });
     };
     return {
-        loggingWithGoogle, createNewUser, logInWithEmail
+        loggingWithGoogle, createNewUser, logInWithEmail, error
     };
 }
 export default Firebase;
