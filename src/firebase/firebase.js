@@ -25,8 +25,14 @@ const firebase = () => {
                 console.log(user);
             });
     };
+    const createUser = (email, password) => {
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((useCredential) => {
+                const user = useCredential.user;
+            });
+    };
     return {
-        loggingWithGoogle, loginWithFacebook
+        loggingWithGoogle, loginWithFacebook, createUser
 
     };
 };
