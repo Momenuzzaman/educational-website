@@ -19,15 +19,16 @@ const Login = () => {
     const handleLogin = (event) => {
         event.preventDefault();
         if (password < 6) {
-            set
+            setError("Password Must be at least 6 characters long");
+            return;
         }
-
+        logInWithEmail(email, password);
     };
     return (
         <div>
             <img src={img} className="img" alt="" />
             <div className="container form">
-                <Form>
+                <Form onSubmit={handleLogin}>
                     <h2>Login</h2>
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
