@@ -15,7 +15,7 @@ const Login = () => {
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     };
-    const { loggingWithGoogle, logInWithEmail } = firebase();
+    const { loggingWithGoogle, Error, logInWithEmail } = firebase();
     const handleLogin = (event) => {
         event.preventDefault();
         if (password < 6) {
@@ -39,6 +39,8 @@ const Login = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                     </Form.Group>
+                    <p style={{ color: 'red' }}>{error}</p>
+                    <p style={{ color: 'red' }}>{Error}</p>
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
                     </Button>
