@@ -59,7 +59,7 @@ function Firebase() {
         });
     }, [auth]);
     return {
-        loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut
+        loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut, user
     };
 }
 export default Firebase;
