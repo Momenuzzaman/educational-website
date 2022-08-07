@@ -1,5 +1,11 @@
 import firebaseInitialize from "./firebase.init";
-import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import {
+    GoogleAuthProvider, signInWithPopup,
+    createUserWithEmailAndPassword, signOut,
+    signInWithEmailAndPassword,
+    sendEmailVerification,
+    onAuthStateChanged
+} from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { useEffect, useState } from "react";
 
@@ -29,6 +35,7 @@ function Firebase() {
                 const user = result.user;
                 console.log(user);
                 setUser(user);
+                emailVerification();
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -59,7 +66,9 @@ function Firebase() {
         });
     }, [auth]);
     const emailVerification = () => {
-
+        sendEmailVerification(auth.currentUser).then(() => {
+            console.log('emailVerification');
+        });
     };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut, user
