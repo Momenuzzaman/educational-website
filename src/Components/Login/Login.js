@@ -22,6 +22,14 @@ const Login = () => {
 
     const handleLogin = (event) => {
         event.preventDefault();
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+        }
+
+        setValidated(true);
         if (password < 6) {
             setError("Password Must be at least 6 characters long");
             return;
