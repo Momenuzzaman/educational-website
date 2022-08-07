@@ -38,7 +38,7 @@ const Header = () => {
                             <Link className="nav-font link" to="/cart" ><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Link>
                             <Link className="nav-font link" to="/Register">Register</Link>
                             <Link className="nav-font link" to="/login">Login</Link>
-                            {user && <button>LogOut</button>}
+                            {user.email && <button className="btn-logOut" onClick={logOut}>LogOut</button>}
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
