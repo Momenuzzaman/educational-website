@@ -47,10 +47,12 @@ function Firebase() {
             });
     };
     const logOut = () => {
-
+        signOut(auth).then(() => {
+            setUser({});
+        });
     };
     return {
-        loggingWithGoogle, createNewUser, logInWithEmail, Error
+        loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut
     };
 }
 export default Firebase;
