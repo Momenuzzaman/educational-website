@@ -8,10 +8,11 @@ import './Header.css';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import Firebase from '../../../firebase/firebase';
 
 
 const Header = () => {
-
+    const { user, logOut } = Firebase();
     return (
         <div>
             <>
@@ -37,6 +38,7 @@ const Header = () => {
                             <Link className="nav-font link" to="/cart" ><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Link>
                             <Link className="nav-font link" to="/Register">Register</Link>
                             <Link className="nav-font link" to="/login">Login</Link>
+                            {user && <button>LogOut</button>}
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
