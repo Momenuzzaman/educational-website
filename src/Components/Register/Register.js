@@ -20,10 +20,18 @@ const Register = () => {
     const handleConfirmPasswordBlur = (event) => {
         setConfirmPassword(event.target.value);
     };
-    const { createNewUser, Error } = firebase();
+    const { createNewUser } = firebase();
 
-
+    const [validated, setValidated] = useState(false);
     const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+
+        setValidated(true);
+
         event.preventDefault();
         if (password !== confirmPassword) {
             setError("Password did not match");
@@ -41,11 +49,16 @@ const Register = () => {
             <img src={img} className="img" alt="" />
             <div className="container form">
                 <h2>Register</h2>
-                <Form onSubmit={handleSubmit}>
+                <Form onSubmit={handleSubmit}
+                    noValidate validated={validated}
+                >
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
+                        <Form.Control.Feedback type="invalid">
+                            Please provide a valid email.
+                        </Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
                         <Form.Label>Password</Form.Label>
@@ -55,7 +68,6 @@ const Register = () => {
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                         <p style={{ color: 'red' }}>{error}</p>
-                        <p style={{ color: 'red' }}>{Error}</p>
                     </Form.Group>
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
