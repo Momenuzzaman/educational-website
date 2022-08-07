@@ -58,6 +58,9 @@ function Firebase() {
             }
         });
     }, [auth]);
+    const emailVerification = () => {
+
+    };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut, user
     };
