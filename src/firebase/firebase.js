@@ -46,6 +46,8 @@ function Firebase() {
                 setError(errorMessage);
             });
     };
+    const logOut = () => {
+    };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error
     };
