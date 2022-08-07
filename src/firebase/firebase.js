@@ -1,5 +1,5 @@
 import firebaseInitialize from "./firebase.init";
-import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signOut, signInWithEmailAndPassword } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 import { useState } from "react";
 
@@ -47,6 +47,7 @@ function Firebase() {
             });
     };
     const logOut = () => {
+
     };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error
