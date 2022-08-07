@@ -11,6 +11,8 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const [validated, setValidated] = useState(false);
+
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };
@@ -22,18 +24,16 @@ const Register = () => {
     };
     const { createNewUser } = firebase();
 
-    const [validated, setValidated] = useState(false);
+
     const handleSubmit = (event) => {
+        event.preventDefault();
+
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
-            return;
         }
-
         setValidated(true);
-
-        event.preventDefault();
         if (password !== confirmPassword) {
             setError("Password did not match");
             return;
@@ -50,9 +50,7 @@ const Register = () => {
             <img src={img} className="img" alt="" />
             <div className="container form">
                 <h2>Register</h2>
-                <Form onSubmit={handleSubmit}
-                    noValidate validated={validated}
-                >
+                <Form noValidate validated={validated} onSubmit={handleSubmit} >
                     <br />
                     <Form.Group className="mb-3" controlId="formGroupEmail">
                         <Form.Label>Email address</Form.Label>
