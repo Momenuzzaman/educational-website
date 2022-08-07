@@ -14,3 +14,10 @@
 .img {
   width: 100%;
 }
+.btn-Google {
+  background-color: lightseagreen;
+  padding: 5px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
