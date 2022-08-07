@@ -28,6 +28,7 @@ const Register = () => {
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
+            return;
         }
 
         setValidated(true);

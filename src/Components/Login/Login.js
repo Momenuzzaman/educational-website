@@ -8,6 +8,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [validated, setValidated] = useState(false);
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -16,6 +17,9 @@ const Login = () => {
         setPassword(event.target.value);
     };
     const { loggingWithGoogle, Error, logInWithEmail } = firebase();
+
+
+
     const handleLogin = (event) => {
         event.preventDefault();
         if (password < 6) {
