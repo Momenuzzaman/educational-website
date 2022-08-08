@@ -71,8 +71,11 @@ function Firebase() {
             console.log('emailVerification');
         });
     };
-    const forgatePassword = () => {
-
+    const forgatePassword = (email) => {
+        sendPasswordResetEmail(auth, email)
+            .then(() => {
+                console.log('reset password');
+            });
     };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut, user
