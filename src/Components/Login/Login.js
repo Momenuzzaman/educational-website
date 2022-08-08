@@ -11,7 +11,10 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const { loggingWithGoogle, logInWithEmail, resetPassword, Error, user } = firebase();
+
     const navigate = useNavigate();
+
+
     if (user) {
         navigate('/home');
     }
