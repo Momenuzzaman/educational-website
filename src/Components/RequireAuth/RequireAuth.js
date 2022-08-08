@@ -1,15 +1,15 @@
 import React from 'react';
-import { Navigate, useLocation } from 'react-router-dom';
-import Firebase from '../../firebase/firebase';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
+import firebase from '../../firebase/firebase';
 
 const RequireAuth = ({ children }) => {
-    const { user } = Firebase();
+    const { user } = firebase();
     const location = useLocation();
-
-    if (!user) {
-        return <Navigate to="/login" state={{ from: location }} replace />
+    if (!user.email) {
+        return <Navigate to="/login" state={{ from: location }} replace></Navigate >
     }
     return children;
+
 
 };
 

@@ -15,11 +15,12 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    let from = location.state?.form.pathname || '/';
+    let from = location.state?.from?.pathname || '/';
 
-    if (user) {
-        navigate('/home');
+    if (user.email) {
+        navigate(from, { replace: true });
     }
+
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };

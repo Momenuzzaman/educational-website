@@ -37,8 +37,8 @@ const Header = () => {
                             </Form>
                             <Link className="nav-font link" to="/cart" ><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Link>
                             <Link className="nav-font link" to="/Register">Register</Link>
-                            <Link className="nav-font link" to="/login">Login</Link>
-                            {user.email && <button className="btn-logOut" onClick={logOut}>LogOut</button>}
+
+                            {user.email ? <button className="btn-logOut" onClick={logOut}>LogOut</button> : <Link className="nav-font link" to="/login">Login</Link>}
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
