@@ -22,7 +22,7 @@ const Register = () => {
     const handleConfirmPasswordBlur = (event) => {
         setConfirmPassword(event.target.value);
     };
-    const { createNewUser } = firebase();
+    const { createNewUser, Error } = firebase();
 
 
     const handleSubmit = (event) => {
@@ -67,6 +67,7 @@ const Register = () => {
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                         <p style={{ color: 'red' }}>{error}</p>
+                        <p style={{ color: 'red' }}>{Error}</p>
                     </Form.Group>
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
