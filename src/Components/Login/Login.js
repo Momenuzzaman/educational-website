@@ -17,7 +17,7 @@ const Login = () => {
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     };
-    const { loggingWithGoogle, logInWithEmail } = firebase();
+    const { loggingWithGoogle, logInWithEmail, resetPassword } = firebase();
 
 
     const [validated, setValidated] = useState(false);
@@ -35,6 +35,9 @@ const Login = () => {
             return;
         }
         logInWithEmail(email, password);
+    };
+    const NewPassword = () => {
+
     };
     return (
         <div>
@@ -61,7 +64,7 @@ const Login = () => {
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
                     </Button>
-                    <Button variant="link">Reset Password</Button>
+                    <Button onClick={() => resetPassword(email)} variant="link">Reset Password</Button>
                 </Form>
                 <br />
                 <button className="btn-Google" onClick={loggingWithGoogle}>Login with Google</button>
