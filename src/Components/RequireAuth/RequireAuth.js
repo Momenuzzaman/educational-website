@@ -1,6 +1,8 @@
 import React from 'react';
+import Firebase from '../../firebase/firebase';
 
-const RequireAuth = () => {
+const RequireAuth = ({ Children }) => {
+    const { user } = Firebase();
     return (
         <div>
 
