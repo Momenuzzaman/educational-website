@@ -70,6 +70,9 @@ function Firebase() {
             console.log('emailVerification');
         });
     };
+    const forgatePassword = () => {
+
+    };
     return {
         loggingWithGoogle, createNewUser, logInWithEmail, Error, logOut, user
     };
