@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './Login.css';
 import firebase from '../../firebase/firebase';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -13,7 +13,9 @@ const Login = () => {
     const { loggingWithGoogle, logInWithEmail, resetPassword, Error, user } = firebase();
 
     const navigate = useNavigate();
+    const location = useLocation();
 
+    let from = location.state?.form.pathname || '/';
 
     if (user) {
         navigate('/home');
