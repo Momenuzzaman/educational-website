@@ -17,7 +17,7 @@ const Login = () => {
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     };
-    const { loggingWithGoogle, logInWithEmail, resetPassword } = firebase();
+    const { loggingWithGoogle, logInWithEmail, resetPassword, Error } = firebase();
 
 
     const [validated, setValidated] = useState(false);
@@ -59,6 +59,7 @@ const Login = () => {
                         </Form.Control.Feedback>
                     </Form.Group>
                     <p style={{ color: 'red' }}>{error}</p>
+                    <p style={{ color: 'red' }}>{Error}</p>
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
                     </Button>
