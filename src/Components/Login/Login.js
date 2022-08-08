@@ -36,9 +36,7 @@ const Login = () => {
         }
         logInWithEmail(email, password);
     };
-    const NewPassword = () => {
 
-    };
     return (
         <div>
             <img src={img} className="img" alt="" />
