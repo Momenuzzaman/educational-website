@@ -61,6 +61,7 @@ const Login = () => {
                     <Button variant="primary" className="btn-top login" type="submit">
                         Submit
                     </Button>
+                    <Button variant="link">Reset Password</Button>
                 </Form>
                 <br />
                 <button className="btn-Google" onClick={loggingWithGoogle}>Login with Google</button>
