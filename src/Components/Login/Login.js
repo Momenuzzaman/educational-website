@@ -4,20 +4,24 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import './Login.css';
 import firebase from '../../firebase/firebase';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
-
-
+    const { loggingWithGoogle, logInWithEmail, resetPassword, Error, user } = firebase();
+    const navigate = useNavigate();
+    if (user) {
+        navigate('/home');
+    }
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
     };
     const handlePasswordBlur = (event) => {
         setPassword(event.target.value);
     };
-    const { loggingWithGoogle, logInWithEmail, resetPassword, Error } = firebase();
+
 
 
     const [validated, setValidated] = useState(false);
