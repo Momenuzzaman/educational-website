@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Footer from './Components/Shared/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';

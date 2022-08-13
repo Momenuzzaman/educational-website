@@ -6,7 +6,7 @@ const RequireAuth = ({ children }) => {
     const { user } = firebase();
     const location = useLocation();
     if (!user.email) {
-        return <Navigate to="/login" state={{ from: location }} replace></Navigate >
+        return (<Navigate to="/login" state={{ from: location }} replace></Navigate >)
     }
     return children;
 

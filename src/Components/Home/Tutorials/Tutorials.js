@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
