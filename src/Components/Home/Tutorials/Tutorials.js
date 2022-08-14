@@ -4,11 +4,13 @@ import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
 import { createContext, useState } from 'react';
 import { addToDb } from '../../utilities/fakedb';
+import useTutorials from '../../hooks/useTutorials';
 
 export const CartContext = createContext();
 
 const Tutorials = () => {
-    const [tutorials, setTutorials] = useState(fakeData);
+    const [tutorials] = useTutorials();
+    // const [tutorials, setTutorials] = useState(fakeData);
     const [cart, setCart] = useState([]);
 
     const handleAddToCart = (tutorial) => {
