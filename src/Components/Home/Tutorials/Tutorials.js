@@ -8,7 +8,7 @@ import { addToDb } from '../../utilities/fakedb';
 export const CartContext = createContext();
 
 const Tutorials = () => {
-    const [tutorials, setProducts] = useState(fakeData);
+    const [tutorials, setTutorials] = useState(fakeData);
     const [cart, setCart] = useState([]);
 
     const handleAddToCart = (tutorial) => {
