@@ -3,6 +3,7 @@ import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
 import { createContext, useState } from 'react';
+import { addToDb } from '../../utilities/fakedb';
 
 export const CartContext = createContext();
 
@@ -13,6 +14,7 @@ const Tutorials = () => {
     const handleAddToCart = (tutorial) => {
         const newCart = [...cart, tutorial];
         setCart(newCart);
+        addToDb(tutorial.id);
         console.log(newCart);
     };
 
