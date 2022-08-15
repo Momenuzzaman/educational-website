@@ -17,4 +17,5 @@ const useCart = tutorials => {
             setCart(saveCart);
         }
     }, [tutorials]);
+    return [cart, setCart];
 };
