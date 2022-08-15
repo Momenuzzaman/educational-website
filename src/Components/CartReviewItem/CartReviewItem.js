@@ -10,7 +10,8 @@ const CartReviewItem = ({ tutorial }) => {
             <div>
                 <div>
                     <p>{name}</p>
-                    <p>Price: ${price}</p>
+                    <p>Price : ${price}</p>
+                    <p>Quantity : {quantity}</p>
                 </div>
                 <div>
                     <button>Delete</button>
