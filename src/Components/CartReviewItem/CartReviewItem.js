@@ -5,10 +5,10 @@ const CartReviewItem = ({ tutorial }) => {
     const { img, name, price, quantity } = tutorial;
     return (
         <div className="cart-review-item">
-            <div className='img-container'>
-                <img src={img} width="25%" alt=''></img>
-            </div>
             <div>
+                <img src={img} width="150px" alt=''></img>
+            </div>
+            <div className="cart-review-item-content">
                 <div>
                     <p>{name}</p>
                     <p>Price : ${price}</p>
