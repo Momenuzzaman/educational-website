@@ -29,6 +29,7 @@ const Tutorials = () => {
                 addToTutorial.quantity = quantity;
                 saveCart.push(addToTutorial);
             }
+            setCart(saveCart);
         }
     }, [tutorials]);
 
