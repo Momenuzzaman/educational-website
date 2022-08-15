@@ -1,5 +1,6 @@
 import React from 'react';
 import './CartReviewItem.css';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 const CartReviewItem = ({ tutorial }) => {
     const { img, name, price, quantity } = tutorial;
@@ -16,7 +17,9 @@ const CartReviewItem = ({ tutorial }) => {
                         <p>Quantity : {quantity}</p>
                     </div>
                     <div>
-                        <button>Delete</button>
+                        <button>
+                            <DeleteOutlineIcon></DeleteOutlineIcon>
+                        </button>
                     </div>
                 </div>
             </div>
