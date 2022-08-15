@@ -7,7 +7,14 @@ const CartReviewItem = ({ tutorial }) => {
             <div>
                 <img src={img} alt=''></img>
             </div>
-            <div></div>
+            <div>
+                <div>
+                    <p>{name}</p>
+                </div>
+                <div>
+                    <button>Delete</button>
+                </div>
+            </div>
         </div>
     );
 };
