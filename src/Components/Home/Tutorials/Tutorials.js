@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
@@ -19,6 +19,9 @@ const Tutorials = () => {
         addToDb(tutorial.id);
         console.log(newCart);
     };
+    useEffect(() => {
+
+    }, [tutorials]);
 
     return (
         <div className=" container tutorials" id="courses" >
