@@ -20,5 +20,4 @@ const CartReviewItem = ({ tutorial }) => {
         </div>
     );
 };
-
 export default CartReviewItem;
