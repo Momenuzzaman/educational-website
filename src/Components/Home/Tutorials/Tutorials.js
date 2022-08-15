@@ -3,7 +3,7 @@ import Tutorial from '../Tutorial/Tutorial';
 import './Tutorials.css';
 import fakeData from '../../../FakeData/Fakedata';
 import { createContext, useState } from 'react';
-import { addToDb } from '../../utilities/fakedb';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import useTutorials from '../../hooks/useTutorials';
 
 export const CartContext = createContext();
@@ -20,7 +20,7 @@ const Tutorials = () => {
         console.log(newCart);
     };
     useEffect(() => {
-
+        const storedCart = getStoredCart();
     }, [tutorials]);
 
     return (
