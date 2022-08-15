@@ -4,9 +4,9 @@ import './CartReviewItem.css';
 const CartReviewItem = ({ tutorial }) => {
     const { img, name, price, quantity } = tutorial;
     return (
-        <div>
-            <div>
-                <img src={img} alt=''></img>
+        <div className="cart-review-item">
+            <div className='img-container'>
+                <img src={img} width="25%" alt=''></img>
             </div>
             <div>
                 <div>
