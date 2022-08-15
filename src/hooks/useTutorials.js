@@ -1,5 +1,5 @@
 import { useState } from "react";
-import fakeData from "../../FakeData/Fakedata";
+import fakeData from "../FakeData/Fakedata";
 
 const useTutorials = () => {
     const [tutorials, setTutorials] = useState(fakeData);
