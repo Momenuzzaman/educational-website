@@ -15,11 +15,9 @@ const Tutorials = () => {
     const [cart, setCart] = useState([]);
     useEffect(() => {
         const storedCart = getStoredCart();
-        console.log(storedCart);
         const saveCart = [];
         for (const id in storedCart) {
             const addedTutorial = tutorials.find(tutorial => tutorial.id == id);
-            console.log(tutorials, addedTutorial);
             if (addedTutorial) {
                 const quantity = storedCart[id];
                 addedTutorial.quantity = quantity;
@@ -33,7 +31,6 @@ const Tutorials = () => {
         const newCart = [...cart, tutorial];
         setCart(newCart);
         addToDb(tutorial.id);
-        console.log(newCart);
     };
 
 
