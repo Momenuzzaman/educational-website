@@ -5,6 +5,7 @@ import './Cart.css';
 
 const Cart = () => {
     const [tutorials] = useTutorials();
+    console.log(tutorials);
     return (
         <div className="container">
             <h1>{tutorials.length}</h1>
