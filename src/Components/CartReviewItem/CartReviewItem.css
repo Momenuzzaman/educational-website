@@ -17,3 +17,6 @@
 .detail-item p {
   margin: 3px;
 }
+.delete {
+  color: rgba(235, 87, 87, 1);
+}

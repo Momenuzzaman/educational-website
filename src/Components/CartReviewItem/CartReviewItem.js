@@ -18,7 +18,7 @@ const CartReviewItem = ({ tutorial }) => {
                     </div>
                     <div>
                         <button>
-                            <DeleteOutlineIcon></DeleteOutlineIcon>
+                            <DeleteOutlineIcon className='delete'></DeleteOutlineIcon>
                         </button>
                     </div>
                 </div>
