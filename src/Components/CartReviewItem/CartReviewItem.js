@@ -1,4 +1,5 @@
 import React from 'react';
+import './CartReviewItem.css';
 
 const CartReviewItem = ({ tutorial }) => {
     const { img, name, price, quantity } = tutorial;
