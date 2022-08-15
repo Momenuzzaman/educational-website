@@ -7,17 +7,23 @@ import './Cart.css';
 
 const Cart = () => {
     const [tutorials] = useTutorials();
-    const [cart] = useCart(tutorials);
-    console.log(cart);
+    const [cart, setCart] = useCart(tutorials);
+    const handleTutorialRemove = () => {
+        console.log('click');
+    };
     return (
         <div className="cart-container">
             <div>
                 {
-                    cart.map(tutorial => <CartReviewItem tutorial={tutorial}></CartReviewItem>)
+                    cart.map(tutorial => <CartReviewItem
+                        tutorial={tutorial}
+                        handleTutorialRemove={handleTutorialRemove}
+                    >
+                    </CartReviewItem>)
                 }
             </div>
             <div>
-                <h4>Item Order : </h4>
+                <h4>Item Order : {cart.length} </h4>
                 <h4>Quantity :</h4>
                 <h4>Price :</h4>
             </div>
