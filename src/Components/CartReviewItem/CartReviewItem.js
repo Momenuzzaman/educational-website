@@ -4,7 +4,10 @@ const CartReviewItem = ({ tutorial }) => {
     const { name, price, quantity } = tutorial;
     return (
         <div>
-            <h1>Review Item</h1>
+            <h4>{name}</h4>
+            <p>Price: ${price}</p>
+            <p>Quantity : {quantity}</p>
+
         </div>
     );
 };
