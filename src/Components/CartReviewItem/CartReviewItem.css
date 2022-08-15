@@ -17,6 +17,18 @@
 .detail-item p {
   margin: 3px;
 }
+.delete-container {
+  display: flex;
+  align-items: center;
+}
 .delete {
   color: rgba(235, 87, 87, 1);
+  /* width: 50px; */
+}
+.delete-button {
+  background-color: rgb(235, 87, 87, 0.3);
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }

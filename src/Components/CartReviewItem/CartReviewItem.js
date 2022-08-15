@@ -16,8 +16,8 @@ const CartReviewItem = ({ tutorial }) => {
                         <p>Price : ${price}</p>
                         <p>Quantity : {quantity}</p>
                     </div>
-                    <div>
-                        <button>
+                    <div className="delete-container">
+                        <button className="delete-button">
                             <DeleteOutlineIcon className='delete'></DeleteOutlineIcon>
                         </button>
                     </div>
