@@ -1,6 +1,7 @@
 import React from 'react';
 import useCart from '../../hooks/useCart';
 import useTutorials from '../../hooks/useTutorials';
+import CartReviewItem from '../CartReviewItem/CartReviewItem';
 import './Cart.css';
 
 
@@ -11,7 +12,9 @@ const Cart = () => {
     return (
         <div className="cart-container">
             <div>
-                <h1>Review</h1>
+                {
+                    cart.map(tutorial => <CartReviewItem tutorial={tutorial}></CartReviewItem>)
+                }
             </div>
             <div>
                 <h4>Item Order : </h4>
