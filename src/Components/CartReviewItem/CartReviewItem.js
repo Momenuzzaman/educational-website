@@ -2,7 +2,7 @@ import React from 'react';
 import './CartReviewItem.css';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
-const CartReviewItem = ({ tutorial }) => {
+const CartReviewItem = ({ tutorial, handleTutorialRemove }) => {
     const { img, name, price, quantity } = tutorial;
     return (
         <div className="container">
@@ -17,7 +17,7 @@ const CartReviewItem = ({ tutorial }) => {
                         <p>Quantity : {quantity}</p>
                     </div>
                     <div className="delete-container">
-                        <button className="delete-button">
+                        <button className="delete-button" onClick={() => handleTutorialRemove(tutorial)}>
                             <DeleteOutlineIcon className='delete'></DeleteOutlineIcon>
                         </button>
                     </div>
