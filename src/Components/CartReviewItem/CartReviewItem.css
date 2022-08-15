@@ -1,9 +1,19 @@
 .cart-review-item {
   display: flex;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-left: 5px;
+  border: 1px solid #95a0a7;
+  width: 80%;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 20px;
   margin-bottom: 15px;
   margin-right: 10px;
+  margin-left: 50px;
+}
+.cart-review-item-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.detail-item p {
+  margin: 3px;
 }
