@@ -2,3 +2,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.cart-cal {
+  background-color: rgb(190, 223, 233);
+}

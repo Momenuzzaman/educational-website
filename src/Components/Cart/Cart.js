@@ -27,7 +27,7 @@ const Cart = () => {
                     </CartReviewItem>)
                 }
             </div>
-            <div>
+            <div className="cart-cal">
                 <h4>Item Order : {cart.length} </h4>
                 <h4>Quantity :</h4>
                 <h4>Price :</h4>
