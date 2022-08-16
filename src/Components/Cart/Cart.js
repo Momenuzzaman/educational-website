@@ -45,7 +45,7 @@ const Cart = () => {
                     <br />
                     <p>Total Price : ${total}</p>
                     <br />
-                    <Link to='/inventory'><button>Proceed Checkout</button></Link>
+                    <Link to='/inventory'><button className='cart-button'>Proceed Checkout</button></Link>
                 </div>
             </div>
         </div>
