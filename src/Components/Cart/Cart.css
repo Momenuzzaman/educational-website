@@ -1,7 +1,9 @@
 .cart-container {
+  height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 .cart-cal {
+  position: sticky;
   background-color: rgb(190, 223, 233);
 }

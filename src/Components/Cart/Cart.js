@@ -15,9 +15,19 @@ const Cart = () => {
         setCart(rest);
         removeFromDb(tutorial.id);
     };
+    let total = 0;
+    let quantity = 0;
+    for (const tutorial of cart) {
+        quantity = quantity + tutorial.quantity;
+        total = total + tutorial.price * quantity;
+    }
+
     return (
         <div className="cart-container">
             <div className='cart-detail'>
+                <h1>
+                    Order review
+                </h1>
                 {
                     cart.map(tutorial => <CartReviewItem
                         key={tutorial.id}
@@ -28,10 +38,15 @@ const Cart = () => {
                 }
             </div>
             <div className="cart-cal">
-                <h4>Item Order : {cart.length} </h4>
-                <h4>Quantity :</h4>
-                <h4>Price :</h4>
-                <Link to='/inventory'><button>Proceed Checkout</button></Link>
+                <div>
+                    <h4>Item Order : {cart.length} </h4>
+                    <br />
+                    <h4>Quantity : {quantity}</h4>
+                    <br />
+                    <h4>Price : ${total}</h4>
+                    <br />
+                    <Link to='/inventory'><button>Proceed Checkout</button></Link>
+                </div>
             </div>
         </div>
     );
