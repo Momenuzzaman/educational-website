@@ -5,13 +5,12 @@ import useCart from '../../../hooks/useCart';
 import './Tutorial.css';
 
 
-const Tutorial = (props) => {
-    const { id, name, img, price } = props.tutorial;
+const Tutorial = ({ tutorial, handleAddToCart }) => {
+    const { id, name, img, price } = tutorial;
     const navigate = useNavigate();
     const handleDetail = () => {
         navigate(`/tutorialDetail/${id}`);
     };
-
     return (
         <div className=" g-5 col-sm-12 col-md-6 col-lg-4">
             <Card style={{ width: '18rem' }}>
@@ -24,7 +23,7 @@ const Tutorial = (props) => {
                         </Card.Text>
                     </div>
                     <Card.Title>{name}</Card.Title>
-                    <button className="cart-button add-cart" onClick={() => props.handleAddToCart(props.tutorial)}>Add To Cart</button>
+                    <button className="cart-button add-cart" onClick={() => handleAddToCart(tutorial)}>Add To Cart</button>
                 </Card.Body>
             </Card>
         </div>

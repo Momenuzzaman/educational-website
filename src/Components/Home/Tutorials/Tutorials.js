@@ -40,6 +40,8 @@ const Tutorials = () => {
                 {
                     tutorials.map(tutorial => <Tutorial key={tutorial.id}
                         tutorial={tutorial}
+                        cart={cart}
+                        setCart={setCart}
                         handleAddToCart={handleAddToCart}
                     ></Tutorial>)
                 }

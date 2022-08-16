@@ -14,8 +14,12 @@
   }
 }
 .cart {
+  margin-top: 25px;
   position: sticky;
   top: 0;
   font-weight: bold;
   padding: 30px;
+}
+.h1 {
+  padding-left: 100px;
 }

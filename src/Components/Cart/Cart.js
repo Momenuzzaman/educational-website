@@ -25,8 +25,8 @@ const Cart = () => {
     return (
         <div className="cart-container">
             <div className='cart-detail'>
-                <h1>
-                    Order review
+                <h1 className="h1">
+                    Order review :
                 </h1>
                 {
                     cart.map(tutorial => <CartReviewItem
