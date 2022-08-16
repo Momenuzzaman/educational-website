@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useCart from '../../../hooks/useCart';
 import './Tutorial.css';
+
 
 const Tutorial = (props) => {
     const { id, name, img, price } = props.tutorial;

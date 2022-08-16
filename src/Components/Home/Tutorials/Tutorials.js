@@ -32,8 +32,6 @@ const Tutorials = () => {
         setCart(newCart);
         addToDb(tutorial.id);
     };
-
-
     return (
         <div className=" container tutorials" id="courses" >
             <div className="rated">

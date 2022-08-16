@@ -14,5 +14,8 @@
   }
 }
 .cart {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
   padding: 30px;
 }
