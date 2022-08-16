@@ -3,7 +3,16 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
-.cart-cal {
-  position: sticky;
-  background-color: rgb(190, 223, 233);
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .cart-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cart-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.cart {
+  padding: 30px;
 }

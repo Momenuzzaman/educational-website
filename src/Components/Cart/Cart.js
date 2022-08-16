@@ -38,12 +38,12 @@ const Cart = () => {
                 }
             </div>
             <div className="cart-cal">
-                <div>
+                <div className="cart">
                     <h4>Item Order : {cart.length} </h4>
                     <br />
-                    <h4>Quantity : {quantity}</h4>
+                    <p>Total Quantity : {quantity}</p>
                     <br />
-                    <h4>Price : ${total}</h4>
+                    <p>Total Price : ${total}</p>
                     <br />
                     <Link to='/inventory'><button>Proceed Checkout</button></Link>
                 </div>

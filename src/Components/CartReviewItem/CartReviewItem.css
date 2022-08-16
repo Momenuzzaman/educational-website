@@ -1,6 +1,7 @@
 .cart-review-item {
   display: flex;
   border: 1px solid #95a0a7;
+  background-color: rgb(190, 223, 233);
   width: 80%;
   border-radius: 8px;
   padding: 8px;
