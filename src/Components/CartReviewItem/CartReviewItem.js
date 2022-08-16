@@ -2,6 +2,7 @@ import React from 'react';
 import './CartReviewItem.css';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
+
 const CartReviewItem = ({ tutorial, handleTutorialRemove }) => {
     const { img, name, price, quantity } = tutorial;
     return (
