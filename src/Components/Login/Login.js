@@ -12,14 +12,14 @@ const Login = () => {
     const [error, setError] = useState('');
     const { loggingWithGoogle, logInWithEmail, resetPassword, Error, user } = firebase();
 
-    // const navigate = useNavigate();
-    // const location = useLocation();
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    // let from = location.state.from.pathname || '/';
-    // if (user.email) {
-    //     navigate(from, { replace: true });
-    //     console.log(from);
-    // }
+    let from = location.state.from.pathname || '/';
+    if (user.email) {
+        navigate(from, { replace: true });
+        console.log(from);
+    }
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);

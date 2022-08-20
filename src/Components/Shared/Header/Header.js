@@ -6,13 +6,14 @@ import logo from '../../../image/nav.png';
 import Form from 'react-bootstrap/Form';
 import './Header.css';
 import { HashLink } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Firebase from '../../../firebase/firebase';
 
 
 const Header = () => {
     const { user, logOut } = Firebase();
+    const navigate = useNavigate();
     return (
         <div>
             <>
@@ -36,6 +37,7 @@ const Header = () => {
                                 <Button variant="outline-success">Search</Button>
                             </Form>
                             <Link className="nav-font link" to="/cart" ><ShoppingCartOutlinedIcon></ShoppingCartOutlinedIcon></Link>
+
                             <Link className="nav-font link" to="/Register">Register</Link>
 
                             {user.email ? <button className="btn-logOut" onClick={logOut}>LogOut</button> : <Link className="nav-font link" to="/login">Login</Link>}

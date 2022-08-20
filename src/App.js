@@ -12,6 +12,7 @@ import TutorialDetail from './Components/Home/TutorialDetais/TutorialDetail';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 function App() {
   return (
 
@@ -26,6 +27,9 @@ function App() {
           <RequireAuth>
             <Cart />
           </RequireAuth>} />
+        {/* <Route path="/*" element={<PrivateRoute />}>
+          <Route path="cart" element={<Cart />} />
+        </Route> */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<PageNotFound />} />
