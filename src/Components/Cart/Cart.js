@@ -10,6 +10,7 @@ import './Cart.css';
 const Cart = () => {
     const [tutorials] = useTutorials();
     const [cart, setCart] = useCart(tutorials);
+    console.log(cart);
     const handleTutorialRemove = (tutorial) => {
         const rest = cart.filter(tuto => tuto.id !== tutorial.id);
         setCart(rest);

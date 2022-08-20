@@ -16,10 +16,7 @@ const Login = () => {
     const location = useLocation();
 
     let from = location.state.from.pathname || '/';
-    if (user.email) {
-        navigate(from, { replace: true });
-        console.log(from);
-    }
+
 
     const handleEmailBlur = (event) => {
         setEmail(event.target.value);
@@ -28,6 +25,10 @@ const Login = () => {
         setPassword(event.target.value);
     };
 
+    if (user.email) {
+        navigate(from, { replace: true });
+        console.log(from);
+    }
 
 
     const [validated, setValidated] = useState(false);

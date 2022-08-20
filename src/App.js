@@ -13,6 +13,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Inventory from './Components/Inventory/Inventory';
 function App() {
   return (
 
@@ -23,12 +24,13 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/course" element={<Tutorials />} />
         <Route path="/tutorialDetail/:tutorialId" element={<TutorialDetail />} />
-        <Route path="/cart" element={
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/inventory" element={
           <RequireAuth>
-            <Cart />
+            <Inventory />
           </RequireAuth>} />
         {/* <Route path="/*" element={<PrivateRoute />}>
-          <Route path="cart" element={<Cart />} />
+          <Route path="inventory" element={<Inventory />} />
         </Route> */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

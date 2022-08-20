@@ -7,9 +7,7 @@ const RequireAuth = ({ children }) => {
     console.log(user);
     const location = useLocation();
     if (!user.email) {
-        return (
-            <Navigate to="/login" state={{ from: location }} replace></Navigate >
-        )
+        return <Navigate to="/login" state={{ from: location }} replace></Navigate >;
     }
     return children;
 

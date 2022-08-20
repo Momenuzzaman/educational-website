@@ -29,6 +29,7 @@ const Tutorials = () => {
 
     const handleAddToCart = (tutorial) => {
         const newCart = [...cart, tutorial];
+        console.log(cart);
         setCart(newCart);
         addToDb(tutorial.id);
     };
